@@ -1,0 +1,55 @@
+/*-------------- top-menu -----------------*/
+.top-menu{
+	&__list,
+	&__item{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__list{
+		display: inline-flex;
+	}
+
+	&__item,
+	&__link{
+		@include font(normal, bold, 12px, 1.25, #fff);
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__link{
+		display: inline-block;
+		padding: 12px 26px;
+	}
+
+	&__item{
+		position: relative;
+	}
+
+	&__item:hover &__link{
+		color: $color-grey;
+	}
+
+	&__item--color{
+		background: $color-red;
+	}
+
+	&__item--color &__text::before{
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 3.5px;
+		height: 6px;
+		margin-right: 10px;
+		background: url(#{$path-icon}/ic-arr-right.svg) no-repeat center;
+	}
+
+	&__item--color:hover &__link{
+		color: #fff;
+	}
+
+	&__item--color:hover{
+		background: $color-red-light;
+	}
+}

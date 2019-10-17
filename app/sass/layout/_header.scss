@@ -1,0 +1,73 @@
+/*-------------- Header -----------------*/
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #e5e5e5;
+
+	&__logo-wrap{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 210px;
+		height: 100%;
+		border-right: 1px solid #e5e5e5;
+	}
+
+	&__content{
+		width: calc(100% - 210px);
+	}
+
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: $color-text;
+	}
+
+	&__address{
+		@include font(normal, bold, 14px, 1.2, #fff);
+		text-transform: uppercase;
+		padding-left: 25px;
+	}
+
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__contacts{
+		width: 210px;
+		padding: 10px 30px;
+		border-left: 1px solid #e5e5e5;
+	}
+
+	.main-menu{
+		width: calc(100% - 210px);
+	}
+
+	&__phone{
+		display: inline-block;
+		@include font(normal, 600, 14px, 1.2, $color-text);
+		text-decoration: none;
+	}
+
+	&__phone::before{
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 16px;
+		height: 16px;
+		margin-right: 10px;
+		background: url(#{$path-icon}/ic-call.svg) no-repeat center;
+	}
+
+	&__phone:hover{
+		color: $color-red-light;
+	}
+
+	&__phone:not(:last-child){
+		margin-bottom: 5px;
+	}
+}

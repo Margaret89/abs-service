@@ -1,0 +1,14 @@
+@import 'utils/variables';
+@import 'utils/fonts';
+@import "utils/mixins";
+
+/*-------------- base style -----------------*/
+
+@import 'base/base';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// /*-------------- Components styles -----------------*/
+@import 'components/top-menu';
+@import 'components/main-menu';
