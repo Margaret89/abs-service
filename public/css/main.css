@@ -305,6 +305,61 @@ input[type="submit"].btn--border:hover {
 }
 
 /*-------------- Footer -----------------*/
+.footer {
+  background: #222222;
+  border-top: 1px solid #444;
+}
+
+.footer__top {
+  padding: 85px 0;
+}
+
+.footer__bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0 23px;
+  border-top: 1px solid #444;
+}
+
+.footer__copyright {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #909090;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.footer-contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 51%;
+}
+
+.footer-contacts__icon {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.footer-contacts__text {
+  max-width: calc(100% - 70px);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #909090;
+}
+
 /*-------------- top-menu -----------------*/
 .top-menu__list, .top-menu__item {
   margin: 0;
@@ -449,4 +504,65 @@ input[type="submit"].btn--border:hover {
 
 .main-menu__item:hover .main-menu__sub {
   display: block;
+}
+
+/*-------------- footer-menu -----------------*/
+.footer-menu__list, .footer-menu__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu__list {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.footer-menu__item {
+  padding: 10px 0;
+}
+
+.footer-menu__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-menu__item:hover .footer-menu__link {
+  color: #909090;
+}
+
+/*-------------- bottom-menu -----------------*/
+.bottom-menu__list, .bottom-menu__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bottom-menu__list {
+  display: inline-flex;
+}
+
+.bottom-menu__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.bottom-menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.bottom-menu__item:hover .bottom-menu__link {
+  color: #909090;
 }

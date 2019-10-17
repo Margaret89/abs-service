@@ -1,0 +1,27 @@
+/*-------------- bottom-menu -----------------*/
+.bottom-menu{
+	&__list,
+	&__item{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__list{
+		display: inline-flex;
+	}
+
+	&__link{
+		@include font(normal, 600, 12px, 1.25, #fff);
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__item:not(:last-child){
+		margin-right: 50px;
+	}
+
+	&__item:hover &__link{
+		color: $color-grey;
+	}
+}
