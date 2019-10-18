@@ -1,4 +1,13 @@
 $(document).ready(function () {
+	if ($('.js-slider-top').length) {
+		$('.js-slider-top').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: false,
+		});
+	}
 
 	
 	// //---------- Маска для телефона -------------
