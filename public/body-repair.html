@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Кузовной ремонт</title>
+		<link rel="stylesheet" href="css/bootstrap-reboot.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="js/vendor/slick/slick.css">
+		<link rel="stylesheet" href="js/vendor/readmore-symbols/readmore-symbols.css">
+		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	
+		<script src="js/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__logo-wrap">
+					<a href="/"><img src="img/logo.svg" alt="" class="header__logo"></a>
+				</div>
+			
+				<div class="header__content">
+					<div class="header__top">
+						<div class="header__address">г. Москва, МКАД 38км, 6БС1</div>
+			
+						<nav class="top-menu">
+							<ul class="top-menu__list">
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link"><span class="top-menu__text">О нас</span></a>
+								</li>
+			
+								<li class="top-menu__item top-menu__item--color"><a href="#" class="top-menu__link"><span class="top-menu__text">Контакты</span></a></li>
+							</ul>
+						</nav>
+					</div>
+			
+					<div class="header__bottom">
+						<nav class="main-menu">
+							<ul class="main-menu__list">
+								<li class="main-menu__item"><a href="#" class="main-menu__link current">Акции</a></li>
+			
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Техническое обслуживание
+										<span class="main-menu__arr"></span>
+									</a>
+			
+									<ul class="main-menu__sub">
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена масла в двигателе</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена масла в КПП (Полная/частичная)</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена антифриза</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена тормозной жидкости</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена Тормозных колодок</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена фильтров (Масляный, воздушный, топливный, салонный)</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена свечей зажигания</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена лампочек</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Подбор/продажа расходных материалов</a></li>
+									</ul>
+								</li>
+			
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Слесарный ремонт
+										<span class="main-menu__arr"></span>
+									</a>
+			
+									<ul class="main-menu__sub">
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт подвески</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт рулевого управления</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт двигателей</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт трансмиссии</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт топливной системы</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт выхлопной системы</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Электрооборудование</a></li>
+			
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт системы охлаждения</a></li>
+									</ul>
+								</li>
+			
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Кузовной ремонт
+										<span class="main-menu__arr"></span>
+									</a>
+			
+									<ul class="main-menu__sub">
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт сколов</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт/замена стекол</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Удаление царапин и вмятин</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт лобового cтекла</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Полировка кузова автомобиля</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Покраска автомобиля</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Удаление вмятин</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена деталей кузова</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Восстановление геометрии кузова</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Бронирование фар</a></li>
+									</ul>
+								</li>
+			
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Утилизация</a></li>
+			
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Заказ запчастей</a></li>
+			
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Доп. услуги</a></li>
+							</ul>
+						</nav><!-- end main-menu -->
+			
+						<div class="header__contacts">
+							<a href="tel:+78002004458" class="header__phone">8 (800) 200-44-58</a>
+							<a href="tel:+74952043343" class="header__phone">+7 (495) 204-33-43</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section class="body-repair">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="h1">кузовной ремонт автомобиля /замена деталей / покраска</div>
+
+								<div class="body-repair__text">Хотите рассчитать предварительную стоимость ремонтных работ с вашим авто в техцентре «НЕМЕЦ»?<br>Используйте онлайн калькулятор кузовного ремонта и покраски (расходники и краска оплачиваются отдельно)!</div>
+
+								<div class="choosen-elem">
+									<div class="tabs-page js-tabs-page">
+										<div class="tabs-page__top">
+											<div class="tabs-page__head">Выберите нужный элемент на схеме</div>
+
+											<ul class="tabs-page__list js-tabs-page-list">
+												<li class="tabs-page__item js-tabs-page-item" data-item="tab1">
+													<div class="tabs-page__item-text">Sedan</div>
+
+													<div class="tabs-page__img">
+														<img src="img/sedan.svg" alt="" class="tabs-page__img-def">
+														<img src="img/sedan-border.svg" alt="" class="tabs-page__img-border">
+														<img src="img/sedan-color.svg" alt="" class="tabs-page__img-color">
+													</div>
+												</li>
+
+												<li class="tabs-page__item js-tabs-page-item" data-item="tab2">
+													<div class="tabs-page__item-text">Hatchback</div>
+
+													<div class="tabs-page__img">
+														<img src="img/hatchback.svg" alt="" class="tabs-page__img-def">
+														<img src="img/hatchback-border.svg" alt="" class="tabs-page__img-border">
+														<img src="img/hatchback-color.svg" alt="" class="tabs-page__img-color">
+													</div>
+												</li>
+
+												<li class="tabs-page__item active js-tabs-page-item" data-item="tab3">
+													<div class="tabs-page__item-text">Crossover</div>
+
+													<div class="tabs-page__img">
+														<img src="img/crossover.svg" alt="" class="tabs-page__img-def">
+														<img src="img/crossover-border.svg" alt="" class="tabs-page__img-border">
+														<img src="img/crossover-color.svg" alt="" class="tabs-page__img-color">
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tabs-page__content js-tabs-page-content">
+											<div id="tab1" class="tabs-page__content-item js-tabs-page-content-item">
+												<div class="marking-car">
+													<img src="img/sedan-big.svg" alt="">
+												</div>
+											</div>
+
+											<div id="tab2" class="tabs-page__content-item js-tabs-page-content-item">
+												<div class="marking-car">
+													<img src="img/hatchback-big.svg" alt="">
+												</div>
+											</div>
+
+											<div id="tab3" class="tabs-page__content-item js-tabs-page-content-item">
+												<div class="marking-car">
+													<img src="img/crossover-big.svg" alt="">
+													<!-- <img src="img/crossover-parts.svg" alt=""> -->
+													<div class="marking-car__parts">
+														<?xml version="1.0" encoding="utf-8"?>
+														<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+														<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															 viewBox="0 0 670 245" style="enable-background:new 0 0 670 245;" xml:space="preserve">
+														<path id="threshold" class="elem-car js-elem-car active" d="M209.5,182.5c1,2.5,2,13.5,2,17.5c93.7,0.7,280.5,0,280.5,0c0-2,0-8.5,1-12
+															C398.2,185.8,209.5,182.5,209.5,182.5z"/>
+														<path id="door" class="elem-car js-elem-car active" d="M215.5,182.5l107,2.5c0.8-5.5,2-17.4,2-21s-1.2-12.8-2-17l2-20l0.5-20c0-3.5-4-19-6-23
+															c-4.7-21.8-16-65.5-16-65.5c-20.5-3.5-111.5-1-124.5,0L161,86c-0.8,5.5,11.5,38,11.5,38C199.5,130,213.5,165.5,215.5,182.5z"/>
+														<path id="hood" class="elem-car js-elem-car" d="M487.5,188h-21c0-3.5,5-69,3.5-80.5c-2-15-10.2-21.8-15.5-27l4-3.5c6.5,7,18,8,18,8
+															c85,8,122.5,9.5,136.5,24c0,0-5.6,0.5-12.7,0.2c-1.7-0.1-3.4,0.7-4.4,2.1L584,127.5c0,0-16-7.9-31.5-7
+															C502.9,123.3,488.5,166.7,487.5,188z"/>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="choosen-elem__drawing js-elem-drawing">
+										<!-- <img src="img/models.svg" alt=""> -->
+										<?xml version="1.0" encoding="utf-8"?>
+										<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+										<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 340 300" style="enable-background:new 0 0 340 300;" xml:space="preserve">
+										<style type="text/css">
+											.st1{clip-path:url(#SVGID_2_);}
+										</style>
+										<path id="threshold" class="elem-model js-elem-car active" d="M318.7,209V81.4c2-0.1,3.9-0.4,5.8-0.9v129.4C322.6,209.4,320.7,209.1,318.7,209z"/>
+										<path class="elem-model" d="M338.9,52.4c0,11.9-9.8,21.7-21.9,21.7c-12,0-21.8-9.7-21.9-21.7c0-11.9,9.9-21.7,21.9-21.7
+											C329.1,30.7,338.9,40.5,338.9,52.4z"/>
+										<path class="elem-model" d="M331.3,52.4c0,7.8-6.5,14.2-14.3,14.2c-7.8,0-14.3-6.4-14.3-14.2c0.1-7.8,6.4-14.1,14.3-14.1
+											C325,38.2,331.3,44.6,331.3,52.4z M305,52.4c0,6.7,5.4,12,12,12c6.7,0,12-5.4,12-11.9c0-6.6-5.4-11.9-12-11.9
+											C310.4,40.5,305,45.8,305,52.4z"/>
+										<path class="elem-model" d="M338.9,237.9c0,11.9-9.8,21.7-21.9,21.7c-12,0-21.8-9.7-21.9-21.7c0-11.9,9.9-21.7,21.9-21.7
+											C329.1,216.2,338.9,226,338.9,237.9z"/>
+										<path class="elem-model" d="M331.3,237.8c0,7.8-6.5,14.2-14.3,14.2c-7.8,0-14.3-6.4-14.3-14.2c0.1-7.8,6.4-14.1,14.3-14.1
+											C325,223.7,331.3,230.1,331.3,237.8z M305,237.8c0,6.7,5.4,12,12,12c6.7,0,12-5.3,12-11.9s-5.4-11.9-12-11.9
+											C310.4,226,305,231.2,305,237.8z"/>
+										<path class="elem-model" d="M283.6,90.8h31.3v71h-45.6h-0.1l-0.1,0l-25.9,8c0.3-9.3,1.4-19.2,3.7-28.9l0,0c1.6-7.1,7.3-18.7,12.7-28.7
+											c2.7-5,5.3-9.5,7.2-12.8c1-1.6,1.7-3,2.3-3.9c0.3-0.5,0.5-0.8,0.6-1.1c0.1-0.1,0.1-0.2,0.2-0.3C273.3,91.5,278.6,90.8,283.6,90.8z
+											 M247.6,162.4l-0.1,1.2l1.1-0.4l21-7.5l0.5-0.2l0-0.5l3.1-47.9l0,0v0c0-1.2-0.7-2.1-1.7-2.5c-1-0.3-2.1-0.1-2.8,0.9
+											c-5.6,7.8-16.1,24.4-19.2,41.6l0,0C248.6,152.2,248,157.4,247.6,162.4z"/>
+										<path id="door" class="elem-model js-elem-car active" d="M248.6,201.1l0,0.2l0.2,0.2l14.1,14.6l0,0c1.8,1.9,5.1,0.8,5.2-1.9l2-42.2l0-1l-1,0.2l-21.4,5
+											l-0.6,0.1l0,0.6C247.2,187.2,247.7,194,248.6,201.1z M271.8,229.1h-0.2c-2.7,0-5.2-1.2-6.9-3.1c-4.4-5-8.2-9.3-11.4-12.8
+											c-4.1-4.6-7-7.9-8.5-9.5c-1.1-8.5-1.9-18.7-1.7-29.8l26.4-8.2h45.5v22.9L278,226.6C276.4,228.2,274.2,229.1,271.8,229.1z"/>
+										<path class="elem-model" d="M276.1,280.8L276.1,280.8l-2.6,10.1l-3.6-1l-3.6-23.9l0-0.1l0-0.1L252,233.1c-2.3-5.3-4.1-10.8-5.1-16.5l0,0
+											l0,0c-0.4-1.8-0.7-3.9-1.1-6.2c0.4,0.5,0.9,1,1.4,1.6c3.1,3.5,7.7,8.7,14.7,16.5c2.5,2.8,6,4.3,9.7,4.3h0.2c3.3,0,6.5-1.3,8.9-3.7
+											l0,0l0,0l34.3-35.3v15.2c-0.2,0-0.4,0-0.6,0.1c0,0-0.1,0-0.1,0c-14.6,1.4-25.9,13.5-26.3,28v0c-0.3,8.9,3.5,16.9,9.6,22.3l-4.4,16.7
+											c0,0,0,0,0,0c-0.7,2.6-3,4.4-5.6,4.8c-0.5-2.1-2-3.8-4.2-4.4C280.1,275.8,276.9,277.7,276.1,280.8z"/>
+										<path id="hood" class="elem-model js-elem-car" d="M280.4,87.1c-2.3-40,5.9-59.8,9-65.7c1,0.8,2.3,1.3,3.7,1.2c3.2,0,5.8-2.7,5.7-5.8v-1.5
+											c0.8,0.6,1.3,1.5,1.3,2.6v10.9c-7.3,5.1-12,13.4-12.3,22.8c-0.4,15.7,11.7,28.7,27.1,29.7v5.7h-31.3h0
+											C282.6,87.1,281.5,87.1,280.4,87.1z"/>
+										<path class="elem-model" d="M270.2,78.7L270.2,78.7c0.7-43.8,11.9-67,16.9-75.1l0.1,13.5c0,0,0,0,0,0c0,0.2,0,0.4,0,0.5c0,0,0,0.1,0,0.1
+											c-1.8,2.7-13.4,22.2-10.7,69.7c-2.3,0.3-4.5,0.9-6.6,2.1L270.2,78.7z"/>
+										<path class="elem-model" d="M296.6,277l4-15.1c4.7,3.1,10.3,5,16.4,5c2.5,0,4.9-0.3,7.2-0.9c-0.1,0.2-0.1,0.5-0.2,0.7
+											c-0.3,1-0.7,2.2-1.1,3.6c-0.9,2.8-2.1,6.2-3.2,9.6c-1.2,3.4-2.3,6.7-3.1,9.1c-0.4,1.2-0.8,2.2-1,2.9c-0.1,0.3-0.2,0.5-0.2,0.7
+											l-9.5,1.4l-0.3,0l-0.2,0.3l-3,4.3l-17.6-4.8l2.4-9.2C291.4,284.5,295.4,281.5,296.6,277L296.6,277z"/>
+										<path class="elem-model" d="M313.4,7.5l0.1,0.3l0.3,0.1l5.8,1.8l4.3,14.6c-3.1-0.8-6.5-1-9.9-0.7c-3.7,0.2-7.1,1.3-10.2,2.8v-8.6
+											c0-3.2-2.2-5.8-5.1-6.6l-0.1-9.1l12.8,0.1L313.4,7.5z"/>
+										<g>
+											<defs>
+												<rect id="SVGID_1_" x="123" width="94" height="300"/>
+											</defs>
+											<clipPath id="SVGID_2_">
+												<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+											</clipPath>
+											<g class="st1">
+												<path class="elem-model" d="M126.9,88.8c10.4-6.6,33.3-7.3,40.9-7.3c0.7,0,3.7,0,4.4,0c7.7,0,30.5,0.7,40.9,7.3h3.6l-3.4-43.9l-19.5-10.3
+													h-47.6l-19.5,10.3l-3.4,43.9L126.9,88.8L126.9,88.8z"/>
+												<path class="elem-model" d="M213.7,126.6l-2.1-3.8c-4.7-1.8-23.9-6.6-41.5-6.6s-36.8,4.8-41.5,6.6l-2.1,3.8c6.3,21.2,8.8,52.1,4.7,76.4
+													l1.6,3.6h74.8l1.6-3.6C204.9,178.6,207.4,147.7,213.7,126.6z"/>
+												<path class="elem-model" d="M211.5,279.7c0,0-1.6-5.8-1.7-7h-8h-4.3l-4,7.5h-46.8l-4-7.5h-4.2h-8c-0.1,1.2-1.7,7-1.7,7s-4,0.1-4.9,0.3
+													c0,1.3,1.7,19.7,1.7,19.7h7.2l3.1-6.3h68.6l3.1,6.3h7.2c0,0,1.7-18.4,1.7-19.7C215.5,279.8,211.5,279.7,211.5,279.7z"/>
+												<path class="elem-model" d="M211,0.3h-10.8l-3.2,7.4h-53.9l-3.2-7.4H129l-5.7,7.4v6.5h3.1c3.2,0,5.8,2.3,5.8,5v2.3h7.2
+													c2.4,0,4.7,1.2,5.9,3l1.7,2.7h46l1.7-2.7c1.2-1.9,3.4-3,5.9-3h7.2v-2.2c0-2.8,2.6-5,5.8-5h3.1V7.8L211,0.3z"/>
+												<path class="elem-model" d="M191.4,260.5h10.3c0-4.6,0-13,0-18.5h-4.7c-5.6,2.6-15.6,4.4-27,4.4c-11.5,0-21.5-1.8-27-4.4h-4.7
+													c0,5.6,0,13.9,0,18.5h10.3c3.4,0,6,2.8,6,6.1c0,3.4-2.7,6.1-6,6.1h-2.9l2.5,4.7h43.5l2.5-4.7h-2.9c-3.4,0-6-2.8-6-6.1
+													C185.4,263.2,188.1,260.5,191.4,260.5z"/>
+											</g>
+										</g>
+										<path class="elem-model" d="M15.6,209.9V80.5c1.8,0.5,3.8,0.8,5.7,0.9V209C19.4,209.1,17.5,209.4,15.6,209.9z"/>
+										<path class="elem-model" d="M93.2,141L93.2,141c2.2,9.7,3.3,19.5,3.7,28.9l-25.9-8l-0.1,0h-0.1H25.2v-71h31.3l0,0c5-0.1,10.3,0.6,13.8,3.5
+											c0,0.1,0.1,0.1,0.2,0.3c0.1,0.2,0.4,0.6,0.6,1.1c0.5,0.9,1.3,2.2,2.3,3.9c1.9,3.3,4.5,7.8,7.2,12.8C85.9,122.3,91.6,134,93.2,141z
+											 M70,155l0,0.5l0.5,0.2l21,7.5l1.1,0.4l-0.1-1.2c-0.4-5.1-0.9-10.2-1.9-15.3c-3.2-17.3-13.7-33.8-19.2-41.6l0,0l0,0
+											c-0.7-1-1.9-1.2-2.9-0.9c-1,0.3-1.7,1.2-1.7,2.5c0,0,0,0,0,0L70,155z"/>
+										<path class="elem-model" d="M75.4,226L75.4,226c-1.8,2-4.3,3.1-6.9,3.1h0h0h-0.2c-2.3,0-4.5-0.9-6.2-2.5l-36.9-38.1v-22.9h45.5l26.3,8.2
+											c0.2,11.1-0.6,21.3-1.7,29.8C92.7,206.5,85.6,214.5,75.4,226z M70.9,171.3l-1-0.2l6.7,44.6l0.5,0.5h0c0,0,0,0,0,0l14.1-14.6l0.2-0.2
+											l0-0.2c0.9-7.2,1.4-14,1.5-24.2l0-0.6l-0.6-0.1L70.9,171.3z"/>
+										<path class="elem-model" d="M25.1,193.8l34.3,35.3l0,0l0,0c2.4,2.4,5.6,3.7,8.9,3.7h0.2c3.7,0,7.2-1.5,9.7-4.3c7-7.8,11.6-13,14.7-16.5
+											c0.5-0.6,1-1.1,1.4-1.6c-0.3,2.3-0.7,4.4-1.1,6.2h0l0,0c-1.1,5.7-2.8,11.2-5.1,16.5l-14.4,32.7l0,0.1l0,0.1L70,289.9l-3.6,1
+											l-2.6-10.1l0,0c-0.8-3.1-3.9-4.9-7-4.2c-2.2,0.5-3.8,2.3-4.2,4.4c-2.6-0.4-4.9-2.2-5.6-4.8c0,0,0,0,0,0l-4.4-16.7
+											c6.1-5.4,9.9-13.5,9.6-22.3v0c-0.5-14.5-11.8-26.6-26.3-28c0,0-0.1,0-0.1,0c-0.2,0-0.4-0.1-0.6-0.1V193.8z"/>
+										<path class="elem-model" d="M46.9,22.7c-3.2,0-5.8-2.7-5.7-5.8v-1.5c-0.8,0.6-1.3,1.5-1.3,2.6v10.9c7.3,5.1,12,13.4,12.3,22.8L46.9,22.7z
+											 M46.9,22.7c1.4,0.1,2.7-0.4,3.7-1.2c3.1,5.9,11.3,25.7,9,65.7c-1.1,0-2.2,0-3.3,0h0H25.1v-5.7c15.4-1.1,27.5-14,27.1-29.7
+											L46.9,22.7z"/>
+										<path class="elem-model" d="M22.9,30.8c12,0,21.9,9.7,21.9,21.7c0,11.9-9.8,21.7-21.9,21.7c-12.1,0-21.9-9.7-21.9-21.7
+											C1.1,40.5,10.9,30.8,22.9,30.8z"/>
+										<path class="elem-model" d="M23,38.2c7.9,0,14.3,6.4,14.3,14.1c0,7.8-6.5,14.2-14.3,14.2c-7.8,0-14.2-6.4-14.2-14.2
+											C8.8,44.6,15.1,38.2,23,38.2z M23,40.5c-6.6,0-12,5.3-12,11.9c0,6.5,5.4,11.9,12,11.9c6.6,0,12-5.3,12-12C35,45.8,29.6,40.5,23,40.5
+											z"/>
+										<path class="elem-model" d="M22.9,216.2c12,0,21.9,9.7,21.9,21.7c0,11.9-9.8,21.7-21.9,21.7c-12.1,0-21.9-9.7-21.9-21.7
+											C1.1,226,10.9,216.2,22.9,216.2z"/>
+										<path class="elem-model" d="M23,223.7c7.9,0,14.3,6.4,14.3,14.1c0,7.8-6.5,14.2-14.3,14.2c-7.8,0-14.2-6.4-14.2-14.2
+											C8.8,230.1,15.1,223.7,23,223.7z M23,226c-6.6,0-12,5.3-12,11.9s5.4,11.9,12,11.9c6.6,0,12-5.3,12-12C35,231.2,29.6,226,23,226z"/>
+										<path class="elem-model" d="M69.8,78.7L69.8,78.7l0.3,10.8c-2.1-1.2-4.3-1.8-6.6-2.1c2.7-47.5-8.9-67-10.7-69.7c0,0,0-0.1,0-0.1
+											c0-0.1,0-0.3,0-0.5L53,3.5C57.9,11.7,69.1,34.9,69.8,78.7z"/>
+										<path class="elem-model" d="M34.8,294.5l-0.2-0.3l-0.3,0l-9.4-1.4c-0.1-0.2-0.1-0.4-0.2-0.7c-0.2-0.7-0.6-1.7-1-2.9c-0.9-2.4-2-5.7-3.1-9.1
+											c-1.2-3.4-2.3-6.8-3.2-9.6c-0.5-1.4-0.8-2.6-1.1-3.6c-0.1-0.3-0.2-0.5-0.2-0.7c2.3,0.6,4.7,0.9,7.2,0.9c6.1,0,11.7-1.9,16.4-5
+											l4,15.1c0,0,0,0,0,0c1.2,4.5,5.1,7.5,9.5,7.7l2.4,9.2l-17.6,4.8L34.8,294.5z"/>
+										<path class="elem-model" d="M26.1,8l0.3-0.1l0.1-0.3l2-5.2l12.8-0.1l-0.1,9.1c-2.9,0.8-5.1,3.4-5.1,6.6v8.6C33.1,25,29.6,24,26,23.6
+											c-3.5-0.3-6.8-0.1-9.9,0.7l4.3-14.6L26.1,8z"/>
+										</svg>
+									</div>
+
+								</div><!-- end choosen-elem -->
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__top">
+					<div class="container">
+						<div class="row">
+							<div class="col-6">
+								<nav class="footer-menu">
+									<ul class="footer-menu__list">
+										<li class="footer-menu__item"><a href="#" class="footer-menu__link">Техническое обслуживание</a></li>
+			
+										<li class="footer-menu__item"><a href="#" class="footer-menu__link">Слесарный ремонт</a></li>
+			
+										<li class="footer-menu__item"><a href="#" class="footer-menu__link">Кузовной ремонт</a></li>
+			
+										<li class="footer-menu__item"><a href="#" class="footer-menu__link">Диагностика</a></li>
+			
+										<li class="footer-menu__item"><a href="#" class="footer-menu__link">Шиномонтаж</a></li>
+			
+										<li class="footer-menu__item"><a href="#" class="footer-menu__link">Сход-развал</a></li>
+									</ul>
+								</nav>
+							</div>
+			
+							<div class="col-6">
+								<div class="footer-contacts">
+									<div class="footer-contacts__item">
+										<div class="footer-contacts__icon"><img src="img/ic-map.svg" alt=""></div>
+			
+										<div class="footer-contacts__text">Россия, Московская область, МКАД 38 км 6Бс1</div>
+									</div>
+									
+									<div class="footer-contacts__item">
+										<div class="footer-contacts__icon"><img src="img/ic-phone.svg" alt=""></div>
+			
+										<div class="footer-contacts__text">+7 (495) 204-33-43<br>8 (800) 200-44-58</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="footer__bottom-content">
+									<nav class="bottom-menu">
+										<ul class="bottom-menu__list">
+											<li class="bottom-menu__item"><a href="#" class="bottom-menu__link">О нас</a></li>
+											<li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Акции</a></li>
+										</ul>
+									</nav>
+			
+									<div class="footer__copyright-wrap">
+										<span class="footer__copyright">ABC-SERVICE @ 2019. Все права защищены</span><img src="img/logo-small.png" alt="" class="footer__logo">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+			<!-- Попап об успешной отправки письма -->
+			<div style="display: none;" id="msg-success" class="success-alert">
+				<div class="success-alert__text">Ваше сообщение успешно отправлено!</div>
+			</div>
+		</div>
+
+		<script src="js/vendor/slick/slick.min.js"></script>
+		<script src="js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="js/vendor/inputmask/jquery.maskedinput.min.js"></script>
+		<script src="js/vendor/readmore-symbols/readmore-symbols.js"></script>
+		<script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
+		<script src="js/vendor/countdown/jquery.syotimer.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+/*-------------- body-repiar -----------------*/
+.body-repair{
+	h1,
+	.h1{
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__text{
+		text-align: center;
+		margin-bottom: 62px;
+	}
+}
+
+.choosen-elem{
+	display: flex;
+	justify-content: space-between;
+
+	&__drawing{
+		display: flex;
+		align-items: center;
+		width: 34%;
+		background: $color-text;
+		padding: 30px;
+	}
+
+	.tabs-page{
+		width: 66%;
+	}
+}
+
+.marking-car{
+	position: relative;
+
+	&__parts{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.elem-car{
+	fill: transparent;
+	cursor: pointer;
+
+	&.active{
+		fill: #E23535;
+		opacity: 0.8;
+	}
+
+	&:hover,
+	&.hover{
+		fill: #EF3939;
+		opacity: 0.6;
+	}
+}
+
+.elem-model{
+	fill: transparent;
+	stroke:#909090;
+	stroke-width:1.5;
+	cursor: pointer;
+
+	&.active{
+		fill: #ffffff;
+		stroke: #fff;
+	}
+
+	&:hover,
+	&.hover{
+		stroke: #fff;
+	}
+}

@@ -83,7 +83,7 @@ h1,
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 h2,
@@ -149,7 +149,12 @@ h6,
 main {
   flex: 1 1 auto;
   padding-bottom: 100px;
+  padding-top: 92px;
   width: 100%;
+}
+
+.first-elem {
+  margin-top: -92px;
 }
 
 .last-elem {
@@ -1531,4 +1536,166 @@ input[type="submit"].btn--border:hover {
   padding: 0;
   right: 8px;
   top: 8px;
+}
+
+/*-------------- tabs-page -----------------*/
+.tabs-page__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs-page__head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  max-width: 200px;
+}
+
+.tabs-page__list, .tabs-page__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-page__list {
+  display: flex;
+}
+
+.tabs-page__item {
+  display: inline-block;
+  padding: 17px 36px;
+  cursor: pointer;
+}
+
+.tabs-page__item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tabs-page__img {
+  margin-top: 12px;
+}
+
+.tabs-page__img-border, .tabs-page__img-color {
+  display: none;
+}
+
+.tabs-page__item.active {
+  background: #f5f5f5;
+}
+
+.tabs-page__item.active .tabs-page__item-text {
+  font-weight: 600;
+}
+
+.tabs-page__item.active .tabs-page__img-def {
+  display: none;
+}
+
+.tabs-page__item.active .tabs-page__img-border {
+  display: block;
+}
+
+.tabs-page__item:hover .tabs-page__img-def {
+  display: none;
+}
+
+.tabs-page__item:hover .tabs-page__img-border {
+  display: none;
+}
+
+.tabs-page__item:hover .tabs-page__img-color {
+  display: block;
+}
+
+.tabs-page__content-item {
+  display: none;
+  background: #f5f5f5;
+  padding: 30px;
+  min-height: 415px;
+}
+
+.tabs-page__content-item.active {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------- body-repiar -----------------*/
+.body-repair h1,
+.body-repair .h1 {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-repair__text {
+  text-align: center;
+  margin-bottom: 62px;
+}
+
+.choosen-elem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choosen-elem__drawing {
+  display: flex;
+  align-items: center;
+  width: 34%;
+  background: #222222;
+  padding: 30px;
+}
+
+.choosen-elem .tabs-page {
+  width: 66%;
+}
+
+.marking-car {
+  position: relative;
+}
+
+.marking-car__parts {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.elem-car {
+  fill: transparent;
+  cursor: pointer;
+}
+
+.elem-car.active {
+  fill: #E23535;
+  opacity: 0.8;
+}
+
+.elem-car:hover, .elem-car.hover {
+  fill: #EF3939;
+  opacity: 0.6;
+}
+
+.elem-model {
+  fill: transparent;
+  stroke: #909090;
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+
+.elem-model.active {
+  fill: #ffffff;
+  stroke: #fff;
+}
+
+.elem-model:hover, .elem-model.hover {
+  stroke: #fff;
 }

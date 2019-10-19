@@ -219,24 +219,52 @@
 							<br>
 							<div class="h2">Счетчик</div>
 							<div class="countdown-wrap">
-									<div class="countdown-wrap__title">До конца акции осталось</div>
+								<div class="countdown-wrap__title">До конца акции осталось</div>
 
-									<div class="js-countdown"></div>
-								</div>
+								<div class="js-countdown"></div>
+							</div>
 
-								<script type="text/javascript">
-									$(document).ready(function () {
-										// Инициализация таймера
-										$('.js-countdown').syotimer({
-											year: 2019,
-											month: 11,
-											day: 25,
-											hour: 12,
-											minute: 0,
-											lang: 'rus'
-										});
+							<script type="text/javascript">
+								$(document).ready(function () {
+									// Инициализация таймера
+									$('.js-countdown').syotimer({
+										year: 2019,
+										month: 11,
+										day: 25,
+										hour: 12,
+										minute: 0,
+										lang: 'rus'
 									});
-								</script>
+								});
+							</script>
+
+							<br>
+							<br>
+							<br>
+							<div class="h2">Табуляция</div>
+							<div class="tabs-page js-tabs-page">
+								<ul class="tabs-page__list js-tabs-page-list">
+									<li class="tabs-page__item js-tabs-page-item" data-item="tab1">Tab1</li>
+									<li class="tabs-page__item js-tabs-page-item" data-item="tab2">Tab2</li>
+									<li class="tabs-page__item js-tabs-page-item" data-item="tab3">Tab3</li>
+									<li class="tabs-page__item js-tabs-page-item" data-item="tab4">Tab4</li>
+								</ul>
+
+								<div class="tabs-page__content js-tabs-page-content">
+									<div id="tab1" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+										 Первый контент
+									</div>
+									<div id="tab2" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+										 Второй контент
+									</div>
+									<div id="tab3" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+										 Третий контент
+									</div>
+									<div id="tab4" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+										 Четвёртый контент
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

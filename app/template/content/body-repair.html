@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+	//= ../header/header-meta.html
+		<title>Кузовной ремонт</title>
+	//= ../header/header-link.html
+	</head>
+	<body>
+		<div class="wrapper">
+			//= ../header/header.html
+			<main>
+				<section class="body-repair">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="h1">кузовной ремонт автомобиля /замена деталей / покраска</div>
+
+								<div class="body-repair__text">Хотите рассчитать предварительную стоимость ремонтных работ с вашим авто в техцентре «НЕМЕЦ»?<br>Используйте онлайн калькулятор кузовного ремонта и покраски (расходники и краска оплачиваются отдельно)!</div>
+
+								<div class="choosen-elem">
+									<div class="tabs-page js-tabs-page">
+										<div class="tabs-page__top">
+											<div class="tabs-page__head">Выберите нужный элемент на схеме</div>
+
+											<ul class="tabs-page__list js-tabs-page-list">
+												<li class="tabs-page__item js-tabs-page-item" data-item="tab1">
+													<div class="tabs-page__item-text">Sedan</div>
+
+													<div class="tabs-page__img">
+														<img src="img/sedan.svg" alt="" class="tabs-page__img-def">
+														<img src="img/sedan-border.svg" alt="" class="tabs-page__img-border">
+														<img src="img/sedan-color.svg" alt="" class="tabs-page__img-color">
+													</div>
+												</li>
+
+												<li class="tabs-page__item js-tabs-page-item" data-item="tab2">
+													<div class="tabs-page__item-text">Hatchback</div>
+
+													<div class="tabs-page__img">
+														<img src="img/hatchback.svg" alt="" class="tabs-page__img-def">
+														<img src="img/hatchback-border.svg" alt="" class="tabs-page__img-border">
+														<img src="img/hatchback-color.svg" alt="" class="tabs-page__img-color">
+													</div>
+												</li>
+
+												<li class="tabs-page__item active js-tabs-page-item" data-item="tab3">
+													<div class="tabs-page__item-text">Crossover</div>
+
+													<div class="tabs-page__img">
+														<img src="img/crossover.svg" alt="" class="tabs-page__img-def">
+														<img src="img/crossover-border.svg" alt="" class="tabs-page__img-border">
+														<img src="img/crossover-color.svg" alt="" class="tabs-page__img-color">
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tabs-page__content js-tabs-page-content">
+											<div id="tab1" class="tabs-page__content-item js-tabs-page-content-item">
+												<div class="marking-car">
+													<img src="img/sedan-big.svg" alt="">
+												</div>
+											</div>
+
+											<div id="tab2" class="tabs-page__content-item js-tabs-page-content-item">
+												<div class="marking-car">
+													<img src="img/hatchback-big.svg" alt="">
+												</div>
+											</div>
+
+											<div id="tab3" class="tabs-page__content-item js-tabs-page-content-item">
+												<div class="marking-car">
+													<img src="img/crossover-big.svg" alt="">
+													<!-- <img src="img/crossover-parts.svg" alt=""> -->
+													<div class="marking-car__parts">
+														//= ../partials/crossover-parts.html
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="choosen-elem__drawing js-elem-drawing">
+										<!-- <img src="img/models.svg" alt=""> -->
+										//= ../partials/models.html
+									</div>
+
+								</div><!-- end choosen-elem -->
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			//= ../footer/footer.html
+		</div>
+
+		//= ../footer/footer-script.html
+	</body>
+</html>
