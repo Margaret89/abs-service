@@ -1,6 +1,7 @@
 /*-------------- calc -----------------*/
 .calc{
 	margin-top: 90px;
+	margin-bottom: 100px;
 
 	h1,
 	.h1{
@@ -43,6 +44,7 @@
 		height: 20px;
 		background: #e5e5e5;
 		transition: all 0.3s ease;
+		position: relative;
 	}
 
 	&__item.active{

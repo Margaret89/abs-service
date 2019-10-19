@@ -10,6 +10,17 @@ $(document).ready(function () {
 		});
 	}
 
+// Слайдер партнеров
+	if ($('.js-partner-slider').length) {
+		$('.js-partner-slider').slick({
+			infinite: false,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			dots: false,
+			arrows: true,
+		});
+	}
+
 // Подсветка услуг при наведении
 	if ($('.js-services-item').length) {
 
@@ -91,6 +102,19 @@ $(document).ready(function () {
 			}
 		});
 	}
+
+// Обрезание текста по количеству символов
+	if ($('.js-read-more').length) {
+		var countSymb = $('.js-read-more').attr('data-count');
+
+		$('.js-read-more').readmore({
+			brief: countSymb,
+			addition: 100,
+			smoothly: 300,
+		});
+	}
+
+
 
 	// // Вызов функции подгрузки изображений
 	// loadBigImg();

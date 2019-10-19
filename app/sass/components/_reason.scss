@@ -1,0 +1,36 @@
+/*-------------- reason -----------------*/
+.reason-wrap{
+	margin-bottom: 10px;
+
+	h1,
+	.h1{
+		margin-bottom: 55px;
+	}
+}
+
+.reason-list{
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 82px;
+	}
+
+	&__num{
+		@include font(normal, 600, 60px, 0.9, $color-red);
+		text-transform: uppercase;
+	}
+
+	&__content{
+		width: calc(100% - 100px);
+	}
+
+	&__head{
+		@include font(normal, 600, 18px, 1.2, $color-text);
+		text-transform: uppercase;
+	}
+
+	&__text{
+		@include font(normal, normal, 16px, 1.5, $color-text);
+		margin-top: 11px;
+	}
+}

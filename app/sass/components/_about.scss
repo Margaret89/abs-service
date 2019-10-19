@@ -1,0 +1,39 @@
+/*-------------- about -----------------*/
+.about{
+	background: $color-text;
+	color: #fff;
+	padding: 100px 0;
+
+	&__img{
+		margin-top: -198px;
+	}
+
+	.info-block__title,
+	.info-block__subtitle,
+	info-block__text,
+	p{
+		color: #fff;
+	}
+
+	.info-block .b-readmore__toggle{
+		border-color: #fff;
+	}
+
+	.info-block .b-readmore__toggle::before,
+	.info-block .b-readmore__toggle::after{
+		background: #fff;
+	}
+
+	.info-block__text{
+		max-width: 480px;
+	}
+
+	.b-readmore__toggle:hover{
+		background: #fff;
+	}
+
+	.b-readmore__toggle:hover::before,
+	.b-readmore__toggle:hover::after{
+		background:$color-text;
+	}
+}

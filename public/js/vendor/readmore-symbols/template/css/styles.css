@@ -1,0 +1,23 @@
+.b-readmore {
+  padding: 15px 0 0 0;
+}
+.b-readmore__link {
+  color: #000;
+  text-decoration: underline;
+}
+.b-readmore__link:hover, .b-readmore__link:focus, .b-readmore__link:active {
+  color: #000;
+  text-decoration: none;
+}
+.b-readmore__open {
+  display: inline-block;
+}
+.b-readmore__close {
+  display: none;
+}
+.b-readmore--opened .b-readmore__open {
+  display: none;
+}
+.b-readmore--opened .b-readmore__close {
+  display: inline-block;
+}

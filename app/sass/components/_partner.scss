@@ -1,0 +1,75 @@
+/*-------------- partner -----------------*/
+.partner-wrap{
+	border-top: 1px solid #e5e5e5;
+	padding-top: 90px;
+	margin-bottom: 145px;
+
+	h1,
+	.h1{
+		text-align: left;
+		padding-right: 30px;
+	}
+}
+
+.partner-slider{
+	display: none;
+
+	&.slick-initialized{
+		display: block;
+	}
+
+	&.slick-initialized .slick-slide{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__item{
+		height: 80px;
+		text-align: center;
+	}
+
+	img{
+		max-height: 100%;
+	}
+
+	&__link{
+		text-decoration: none;
+		transition: all 0.3s ease;
+	}
+
+	&__link:hover{
+		opacity: 0.7;
+	}
+
+	.slick-arrow{
+		display: inline-block;
+		width: 35px;
+		height: 16px;
+		outline: 0;
+		border: 0;
+		font-size: 0;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		@include top-center;
+		cursor: pointer;
+	}
+
+	.slick-prev{
+		left: -50px;
+		background: url(#{$path-icon}/arr-left.svg) no-repeat center;
+	}
+
+	.slick-next{
+		right: -50px;
+		background: url(#{$path-icon}/arr-right.svg) no-repeat center;
+	}
+
+	.slick-prev:hover{background-image:url(#{$path-icon}/arr-left-color.svg);}
+	.slick-next:hover{background-image:url(#{$path-icon}/arr-right-color.svg);}
+
+	.slick-arrow.slick-disabled{
+		opacity: 0;
+	}
+}

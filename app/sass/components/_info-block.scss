@@ -1,0 +1,86 @@
+/*-------------- info-block -----------------*/
+.info-block{
+	margin-top: -10px;
+
+	&__title,
+	&__subtitle{
+		@include font(normal, 600, 40px, 1.25, $color-text);
+		text-transform: uppercase;
+	}
+
+	&__subtitle{
+		margin-bottom: 50px;
+	}
+
+	&__content{
+		padding-left: 50px;
+		padding-bottom: 25px;
+		position: relative;
+	}
+
+	&__content::before{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 32px;
+		background: #e5e5e5;
+		width: 1px;
+		height: calc(100% - 32px);
+	}
+
+	&__text{
+		@include font(normal, normal, 16px, 1.5, $color-text);
+	}
+
+	&__detail{
+		height: 0;
+		overflow: hidden;
+		transition: all 0.3s ease;
+	}
+
+	.b-readmore{
+		position: absolute;
+		left: -22.5px;
+		top: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.b-readmore__toggle{
+		display: inline-block;
+		vertical-align: top;
+		width: 45px;
+		height: 45px;
+		border: 1px solid $color-text;
+		font-size: 0;
+	}
+
+	.b-readmore__toggle::before,
+	.b-readmore__toggle::after{
+		content: '';
+		display: inline-block;
+		width: 15px;
+		height: 1px;
+		background: $color-text;
+		position: absolute;
+		@include top-center;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		transition: all 0.5s ease;
+	}
+
+	.b-readmore__toggle::after{transform: rotate(90deg);}
+	.b-readmore--opened .b-readmore__toggle::before{transform: rotate(360deg);}
+	.b-readmore--opened .b-readmore__toggle::after{transform: rotate(180deg);}
+
+	.b-readmore__toggle:hover{
+		background: $color-text;
+	}
+
+	.b-readmore__toggle:hover::before,
+	.b-readmore__toggle:hover::after{
+		background: #fff;
+	}
+}

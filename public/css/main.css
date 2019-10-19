@@ -70,7 +70,8 @@ p {
   font-size: 16px;
   line-height: 1.5;
   color: #222222;
-  padding: 5px 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 h1,
@@ -149,6 +150,10 @@ main {
   flex: 1 1 auto;
   padding-bottom: 100px;
   width: 100%;
+}
+
+.last-elem {
+  margin-bottom: -100px;
 }
 
 .btn,
@@ -792,6 +797,7 @@ input[type="submit"].btn--border:hover {
 /*-------------- calc -----------------*/
 .calc {
   margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 .calc h1,
@@ -840,6 +846,7 @@ input[type="submit"].btn--border:hover {
   height: 20px;
   background: #e5e5e5;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .steps__item.active {
@@ -1070,4 +1077,324 @@ input[type="submit"].btn--border:hover {
 
 .form-site__hide {
   display: none;
+}
+
+/*-------------- advant -----------------*/
+.advant-wrap {
+  background: #e23535;
+  padding: 92px 0 65px;
+  color: #fff;
+  margin-bottom: 90px;
+}
+
+.advant-wrap h1,
+.advant-wrap .h1 {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.advant-list {
+  text-align: center;
+}
+
+.advant-list__item {
+  margin-bottom: 30px;
+}
+
+.advant-list__icon {
+  margin-bottom: 24px;
+}
+
+.advant-list__head {
+  max-width: 180px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.advant-list__text {
+  max-width: 285px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin-top: 10px;
+  margin: 11px auto 0;
+}
+
+/*-------------- reason -----------------*/
+.reason-wrap {
+  margin-bottom: 10px;
+}
+
+.reason-wrap h1,
+.reason-wrap .h1 {
+  margin-bottom: 55px;
+}
+
+.reason-list__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 82px;
+}
+
+.reason-list__num {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 0.9;
+  color: #e23535;
+  text-transform: uppercase;
+}
+
+.reason-list__content {
+  width: calc(100% - 100px);
+}
+
+.reason-list__head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.reason-list__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222222;
+  margin-top: 11px;
+}
+
+/*-------------- partner -----------------*/
+.partner-wrap {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 90px;
+  margin-bottom: 145px;
+}
+
+.partner-wrap h1,
+.partner-wrap .h1 {
+  text-align: left;
+  padding-right: 30px;
+}
+
+.partner-slider {
+  display: none;
+}
+
+.partner-slider.slick-initialized {
+  display: block;
+}
+
+.partner-slider.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-slider__item {
+  height: 80px;
+  text-align: center;
+}
+
+.partner-slider img {
+  max-height: 100%;
+}
+
+.partner-slider__link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.partner-slider__link:hover {
+  opacity: 0.7;
+}
+
+.partner-slider .slick-arrow {
+  display: inline-block;
+  width: 35px;
+  height: 16px;
+  outline: 0;
+  border: 0;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.partner-slider .slick-prev {
+  left: -50px;
+  background: url(../img/icon/arr-left.svg) no-repeat center;
+}
+
+.partner-slider .slick-next {
+  right: -50px;
+  background: url(../img/icon/arr-right.svg) no-repeat center;
+}
+
+.partner-slider .slick-prev:hover {
+  background-image: url(../img/icon/arr-left-color.svg);
+}
+
+.partner-slider .slick-next:hover {
+  background-image: url(../img/icon/arr-right-color.svg);
+}
+
+.partner-slider .slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+/*-------------- info-block -----------------*/
+.info-block {
+  margin-top: -10px;
+}
+
+.info-block__title, .info-block__subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.info-block__subtitle {
+  margin-bottom: 50px;
+}
+
+.info-block__content {
+  padding-left: 50px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.info-block__content::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 32px;
+  background: #e5e5e5;
+  width: 1px;
+  height: calc(100% - 32px);
+}
+
+.info-block__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222222;
+}
+
+.info-block__detail {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.info-block .b-readmore {
+  position: absolute;
+  left: -22.5px;
+  top: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.info-block .b-readmore__toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #222222;
+  font-size: 0;
+}
+
+.info-block .b-readmore__toggle::before,
+.info-block .b-readmore__toggle::after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background: #222222;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.info-block .b-readmore__toggle::after {
+  transform: rotate(90deg);
+}
+
+.info-block .b-readmore--opened .b-readmore__toggle::before {
+  transform: rotate(360deg);
+}
+
+.info-block .b-readmore--opened .b-readmore__toggle::after {
+  transform: rotate(180deg);
+}
+
+.info-block .b-readmore__toggle:hover {
+  background: #222222;
+}
+
+.info-block .b-readmore__toggle:hover::before,
+.info-block .b-readmore__toggle:hover::after {
+  background: #fff;
+}
+
+/*-------------- about -----------------*/
+.about {
+  background: #222222;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.about__img {
+  margin-top: -198px;
+}
+
+.about .info-block__title,
+.about .info-block__subtitle,
+.about info-block__text,
+.about p {
+  color: #fff;
+}
+
+.about .info-block .b-readmore__toggle {
+  border-color: #fff;
+}
+
+.about .info-block .b-readmore__toggle::before,
+.about .info-block .b-readmore__toggle::after {
+  background: #fff;
+}
+
+.about .info-block__text {
+  max-width: 480px;
+}
+
+.about .b-readmore__toggle:hover {
+  background: #fff;
+}
+
+.about .b-readmore__toggle:hover::before,
+.about .b-readmore__toggle:hover::after {
+  background: #222222;
 }

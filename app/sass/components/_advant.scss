@@ -1,0 +1,39 @@
+/*-------------- advant -----------------*/
+.advant-wrap{
+	background: $color-red;
+	padding: 92px 0 65px;
+	color: #fff;
+	margin-bottom: 90px;
+
+	h1,
+	.h1{
+		color: #fff;
+		margin-bottom: 60px;
+	}
+}
+
+.advant-list{
+	text-align: center;
+
+	&__item{
+		margin-bottom: 30px;
+	}
+
+	&__icon{
+		margin-bottom: 24px;
+	}
+
+	&__head{
+		max-width: 180px;
+		@include font(normal, 600, 18px, 1.2, #fff);
+		text-transform: uppercase;
+		margin: 0 auto;
+	}
+
+	&__text{
+		max-width: 285px;
+		@include font(normal, normal, 16px, 1.5, #fff);
+		margin-top: 10px;
+		margin: 11px auto 0;
+	}
+}
