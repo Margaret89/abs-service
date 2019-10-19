@@ -9,7 +9,10 @@
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
 		<link rel="stylesheet" href="js/vendor/slick/slick.css">
 		<link rel="stylesheet" href="js/vendor/readmore-symbols/readmore-symbols.css">
+		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
 		<link rel="stylesheet" href="css/main.css">
+	
+		<script src="js/jquery-3.4.1.min.js"></script>
 	</head>
 
 	<body>
@@ -57,7 +60,7 @@
 			
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена фильтров (Масляный, воздушный, топливный, салонный)</a></li>
 			
-										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена свечей ��ажигания</a></li>
+										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена свечей зажигания</a></li>
 			
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена лампочек</a></li>
 			
@@ -188,7 +191,6 @@
 							<br>
 							<br>
 							<div class="h2">Блок с нестандартным заголовком</div>
-
 							<div class="info-block">
 								<div class="info-block__title">О нашем </div>
 
@@ -210,6 +212,31 @@
 									</div>
 								</div>
 							</div>
+
+							<br>
+							<br>
+							<br>
+							<br>
+							<div class="h2">Счетчик</div>
+							<div class="countdown-wrap">
+									<div class="countdown-wrap__title">До конца акции осталось</div>
+
+									<div class="js-countdown"></div>
+								</div>
+
+								<script type="text/javascript">
+									$(document).ready(function () {
+										// Инициализация таймера
+										$('.js-countdown').syotimer({
+											year: 2019,
+											month: 11,
+											day: 25,
+											hour: 12,
+											minute: 0,
+											lang: 'rus'
+										});
+									});
+								</script>
 						</div>
 					</div>
 				</div>
@@ -276,13 +303,19 @@
 					</div>
 				</div>
 			</footer>
+			
+			<!-- Попап об успешной отправки письма -->
+			<div style="display: none;" id="msg-success" class="success-alert">
+				<div class="success-alert__text">Ваше сообщение успешно отправлено!</div>
+			</div>
 		</div>
 
-		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/vendor/slick/slick.min.js"></script>
 		<script src="js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
 		<script src="js/vendor/inputmask/jquery.maskedinput.min.js"></script>
 		<script src="js/vendor/readmore-symbols/readmore-symbols.js"></script>
+		<script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
+		<script src="js/vendor/countdown/jquery.syotimer.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

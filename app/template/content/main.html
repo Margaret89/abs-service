@@ -9,6 +9,57 @@
 		<div class="wrapper">
 			//= ../header/header.html
 			<main>
+				<div style="display: none;" id="sale-popup" class="sale-popup js-sale-popup">
+					<div class="sale-popup__content">
+						<div class="sale-popup__img">
+							<img src="img/sale-popup.jpg" alt="">
+						</div>
+
+						<div class="sale-popup__desc">
+							<div class="sale-popup__head">Ограниченное предложение на ТО</div>
+
+							<div class="sale-popup__counter">
+
+								<div class="countdown-wrap">
+									<div class="countdown-wrap__title">До конца акции осталось</div>
+
+									<div class="js-countdown"></div>
+								</div>
+
+								<script type="text/javascript">
+									$(document).ready(function () {
+										// Инициализация таймера
+										$('.js-countdown').syotimer({
+											year: 2019,
+											month: 11,
+											day: 25,
+											hour: 12,
+											minute: 0,
+											lang: 'rus'
+										});
+									});
+								</script>
+							</div>
+						</div>
+
+						<div class="form-site js-valid-form">
+							<form method="get">
+								<div class="form-site__fields">
+									<input type="text" data-icon="person" placeholder="Ваше имя" required="required">
+
+									<input type="text" class="js-phone" data-icon="phone" placeholder="Телефон" required="required">
+
+									<input type="email" data-icon="email" placeholder="E-mail">
+
+									<textarea class="form-site__hide js-result-steps"></textarea>
+
+									<input type="submit" name="Оставить заявку" class="btn">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div><!-- end sale-popup -->
+
 				<section class="slider-top js-slider-top">
 					<div class="slider-top__item" style="background-image: url(img/slider-top1.jpg);">
 						<div class="slider-top__content">
@@ -586,7 +637,7 @@
 									</div><!-- end steps-tab -->
 
 									<div class="steps-tab js-steps-tab" data-step="5">
-										<div class="form-site">
+										<div class="form-site js-valid-form">
 											<form method="get">
 												<div class="form-site__head">Заполните форму, чтобы получить результаты расчета</div>
 

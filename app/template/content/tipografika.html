@@ -74,7 +74,6 @@
 							<br>
 							<br>
 							<div class="h2">Блок с нестандартным заголовком</div>
-
 							<div class="info-block">
 								<div class="info-block__title">О нашем </div>
 
@@ -96,6 +95,31 @@
 									</div>
 								</div>
 							</div>
+
+							<br>
+							<br>
+							<br>
+							<br>
+							<div class="h2">Счетчик</div>
+							<div class="countdown-wrap">
+									<div class="countdown-wrap__title">До конца акции осталось</div>
+
+									<div class="js-countdown"></div>
+								</div>
+
+								<script type="text/javascript">
+									$(document).ready(function () {
+										// Инициализация таймера
+										$('.js-countdown').syotimer({
+											year: 2019,
+											month: 11,
+											day: 25,
+											hour: 12,
+											minute: 0,
+											lang: 'rus'
+										});
+									});
+								</script>
 						</div>
 					</div>
 				</div>

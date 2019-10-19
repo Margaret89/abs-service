@@ -1,0 +1,38 @@
+/*-------------- countdown -----------------*/
+.countdown-wrap{
+	&__title{
+		@include font(normal, 600, 20px, 1.2, $color-text);
+		margin-bottom: 23px;
+	}
+}
+
+.syotimer{
+	&__body{
+		display: flex;
+	}
+}
+
+.syotimer-cell{
+	position: relative;
+
+	&:not(:last-child){
+		margin-right: 35px;
+	}
+
+	&:not(:last-child):after{
+		content: ':';
+		@include font(normal, 600, 60px, 1, $color-red);
+		position: absolute;
+		top: -5px;
+		right: -25px;
+	}
+
+	&__value{
+		@include font(normal, 600, 60px, 1, $color-red);
+	}
+
+	&__unit{
+		@include font(normal, normal, 16px, 1, $color-text);
+		text-align: center;
+	}
+}

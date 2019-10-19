@@ -114,32 +114,32 @@ $(document).ready(function () {
 		});
 	}
 
+// Вызов всплывающего окна с акцией
+	if ($('.js-sale-popup').length) {
+		$.fancybox.open({
+			src  : '#sale-popup',
+			type : 'inline',
+			// opts : {
+			// 	afterShow : function( instance, current ) {
+			// 		console.info( 'done!' );
+			// 	}
+			// }
+		});
+	}
 
-
-	// // Вызов функции подгрузки изображений
-	// loadBigImg();
-	// loadBigBacground();
-
-	// // Вызов функции прижатия футера к низу экрана
-	// footerBind('.js-main','.js-header,.js-footer');
-	// $(window).on('resize',function(){footerBind('.js-main','.js-header,.js-footer')});
+// Вывод сообщения об успешной отправке в попапе
+	$('.js-valid-form form').each(function(){
+		$(this).on('submit',function(e){
+			$.fancybox.close();
+			$.fancybox.open({
+				src  : '#msg-success',
+				type : 'inline',
+				opts : {
+					
+				}
+			});
+			$(this)[0].reset();
+			e.preventDefault();
+		});
+	});
 });
-
-// // Загрузка больших изображений
-// function loadBigImg() {
-// 	var $imgDefer = $('[data-src]');
-
-// 	$imgDefer.each(function(indx, element){
-// 		var urlImgBig = $(this).attr("data-src");
-// 		$(this).attr("src", urlImgBig);
-// 	});
-// }
-
-// function loadBigBacground() {
-// 	var $imgDefer = $('[data-background]');
-
-// 	$imgDefer.each(function(indx, element){
-// 		var urlBackgroundBig = $(this).attr("data-background");
-// 		$(this).css("background-image", "url("+ urlBackgroundBig +")");
-// 	});
-// }

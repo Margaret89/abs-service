@@ -1,0 +1,59 @@
+/*-------------- sale-popup -----------------*/
+.sale-popup{
+	padding: 70px 50px;
+	width: 1170px;
+
+	&__content{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__img,
+	&__desc,
+	.form-site{
+		padding: 0 15px;
+	}
+
+	&__img{
+		width: 30%;
+	}
+
+	&__desc{
+		width: 40%;
+	}
+
+	.form-site{
+		width: 26%;
+		min-width: 240px;
+	}
+
+	.form-site__fields{
+		display: block;
+	}
+
+	.form-site input[type="text"],
+	.form-site input[type="email"]{
+		margin-right: 0;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.form-site .btn{
+		width: 100%;
+	}
+
+	&__head{
+		@include font(normal, 600, 40px, 1, $color-text);
+		margin-top: -6px;
+	}
+
+	&__desc{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.syotimer-cell__unit{
+		margin-bottom: -3px;
+	}
+}

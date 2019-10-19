@@ -1079,6 +1079,19 @@ input[type="submit"].btn--border:hover {
   display: none;
 }
 
+.success-alert {
+  max-width: 360px;
+}
+
+.success-alert__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #222222;
+  text-align: center;
+}
+
 /*-------------- advant -----------------*/
 .advant-wrap {
   background: #e23535;
@@ -1397,4 +1410,125 @@ input[type="submit"].btn--border:hover {
 .about .b-readmore__toggle:hover::before,
 .about .b-readmore__toggle:hover::after {
   background: #222222;
+}
+
+/*-------------- sale-popup -----------------*/
+.sale-popup {
+  padding: 70px 50px;
+  width: 1170px;
+}
+
+.sale-popup__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale-popup__img, .sale-popup__desc,
+.sale-popup .form-site {
+  padding: 0 15px;
+}
+
+.sale-popup__img {
+  width: 30%;
+}
+
+.sale-popup__desc {
+  width: 40%;
+}
+
+.sale-popup .form-site {
+  width: 26%;
+  min-width: 240px;
+}
+
+.sale-popup .form-site__fields {
+  display: block;
+}
+
+.sale-popup .form-site input[type="text"],
+.sale-popup .form-site input[type="email"] {
+  margin-right: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.sale-popup .form-site .btn {
+  width: 100%;
+}
+
+.sale-popup__head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+  color: #222222;
+  margin-top: -6px;
+}
+
+.sale-popup__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sale-popup .syotimer-cell__unit {
+  margin-bottom: -3px;
+}
+
+/*-------------- countdown -----------------*/
+.countdown-wrap__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #222222;
+  margin-bottom: 23px;
+}
+
+.syotimer__body {
+  display: flex;
+}
+
+.syotimer-cell {
+  position: relative;
+}
+
+.syotimer-cell:not(:last-child) {
+  margin-right: 35px;
+}
+
+.syotimer-cell:not(:last-child):after {
+  content: ':';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1;
+  color: #e23535;
+  position: absolute;
+  top: -5px;
+  right: -25px;
+}
+
+.syotimer-cell__value {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1;
+  color: #e23535;
+}
+
+.syotimer-cell__unit {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  color: #222222;
+  text-align: center;
+}
+
+/*-------------- fancybox -----------------*/
+.fancybox-slide--html .fancybox-close-small {
+  padding: 0;
+  right: 8px;
+  top: 8px;
 }

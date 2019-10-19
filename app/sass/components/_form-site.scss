@@ -58,3 +58,12 @@
 		display: none;
 	}
 }
+
+.success-alert{
+	max-width: 360px;
+
+	&__text{
+		@include font(normal, normal, 16px, 1.45, $color-text);
+		text-align: center;
+	}
+}
