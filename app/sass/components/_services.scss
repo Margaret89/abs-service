@@ -1,0 +1,65 @@
+/*-------------- services -----------------*/
+.services{
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 48px;
+	
+	h1,
+	.h1{
+		max-width: 550px;
+		margin: 0 auto 55px;
+	}
+
+	&__item{
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		margin-bottom: 50px;
+	}
+
+	&__icon{
+		width: 50px;
+		margin-right: 20px;
+		opacity: 0.5;
+	}
+
+	&__name{
+		@include font(normal, 600, 16px, 1.2, #000);
+		text-transform: uppercase;
+		max-width: calc(100% - 70px);
+	}
+
+	&__list--right{
+		text-align: right;
+	}
+
+	&__list--right &__item{
+		flex-direction: row-reverse;
+	}
+
+	&__list--right &__icon{
+		margin-right: 0;
+		margin-left: 20px;
+	}
+
+	&__item:hover &__icon,
+	&__item.active &__icon{
+		opacity: 1;
+	}
+
+	&__item:hover &__name,
+	&__item.active &__name{
+		color: $color-red;
+	}
+
+	&__img-wrap{
+		text-align: center;
+	}
+
+	&__img{
+		display: none;
+	}
+
+	&__img.active{
+		display: block;
+	}
+}

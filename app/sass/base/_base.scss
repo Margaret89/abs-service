@@ -35,6 +35,7 @@ h1,
 .h1{
 	@include font(normal, 600, 40px, 1.2, #000);
 	text-align: center;
+	text-transform: uppercase;
 	margin-bottom: 40px;
 }
 

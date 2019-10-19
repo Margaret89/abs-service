@@ -1,0 +1,18 @@
+/*-------------- brend -----------------*/
+.brand{
+	text-align: center;
+
+	&__item{
+		margin-bottom: 60px;
+
+		img{
+			opacity: 0.5;
+			cursor: pointer;
+			transition: all 0.2s ease;
+		}
+
+		img:hover{
+			opacity: 1;
+		}
+	}
+}

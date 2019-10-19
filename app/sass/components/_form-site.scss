@@ -1,0 +1,60 @@
+/*-------------- form-site -----------------*/
+.form-site{
+	&__head{
+		@include font(normal, 600, 20px, 1.2, #000);
+		margin-bottom: 15px;
+	}
+
+	&__text{
+		@include font(normal, normal, 16px, 1.5, $color-text);
+		margin-bottom: 63px;
+		max-width: 500px;
+	}
+
+	&__fields{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea{
+		height: 50px;
+		width: 270px;
+		outline: none;
+		border: 1px solid #d5d5d5;
+		@include font(normal, normal, 16px, 48px, $color-text);
+		padding: 0 15px;
+		margin-right: 30px;
+	}
+
+	textarea{
+		height: 150px;
+		line-height: 1.5;
+	}
+
+	input[data-icon="person"],
+	input[data-icon="phone"],
+	input[data-icon="email"]{
+		padding-left: 45px;
+		box-shadow: none;
+	}
+
+	input[data-icon="person"]{background: url(#{$path-icon}/ic-person.svg) no-repeat 15px 50%;}
+	input[data-icon="phone"]{background: url(#{$path-icon}/ic-phone.svg) no-repeat 15px 50%;}
+	input[data-icon="email"]{background: url(#{$path-icon}/ic-mail.svg) no-repeat 15px 50%;}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	textarea:focus{
+		border-color: $color-text;
+	}
+
+	.btn{
+		width: 270px;
+	}
+
+	&__hide{
+		display: none;
+	}
+}

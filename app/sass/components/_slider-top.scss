@@ -1,5 +1,12 @@
 /*-------------- slider-top -----------------*/
 .slider-top{
+	display: none;
+	margin-bottom: 90px;
+
+	&.slick-initialized{
+		display: block;
+	}
+
 	&__item{
 		display: flex!important;
 		align-items: flex-end;
