@@ -74,13 +74,13 @@
 		margin-bottom: 20px;
 	}
 
-	&__label{
-		@include font(normal, normal, 16px, 1.2, #000);
-		margin-bottom: 30px;
+	&__load{
+		margin-bottom: 50px;
 	}
 
-	&__fields + .btn{
-		margin-top: 50px;
+	&__load-label{
+		@include font(normal, normal, 16px, 1.2, #000);
+		margin-bottom: 30px;
 	}
 
 	.load-more{

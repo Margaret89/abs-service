@@ -283,6 +283,7 @@ if ($('.js-elem-car').length) {
 // Кнопка загрузки файла
 	$('.js-input-file').change(function(){
 		var f_name = [];
+		var $nameFile = $(this).siblings(".js-name-file");
 
 		for (var i = 0; i < $(this).get(0).files.length; ++i) {
 
@@ -290,8 +291,29 @@ if ($('.js-elem-car').length) {
 
 		}
 
-		$(".js-name-file").html(f_name);
-		$(".js-name-file").attr("title", f_name)
+		$nameFile.html(f_name);
+		$nameFile.attr("title", f_name);
+	});
+
+// Добавление еще одного поля загрузки файла
+	$('.js-file-load-more').click(function(){
+		var idElem = Math.floor(Math.random() * (1000 - 10) + 10);
+
+		$('.js-file-load-more').before('<div class="file-upload"><label class="file-upload__content"><input type="file" name="file'+idElem+'" id="file'+idElem+'" class="js-input-file"><span class="btn btn--border">Выберите файл</span><span class="file-upload__name js-name-file">Файл не выбран</span></label></div>')
+
+		$('#file'+idElem).change(function(){
+			var f_name = [];
+			var $nameFile = $(this).siblings(".js-name-file");
+
+			for (var i = 0; i < $(this).get(0).files.length; ++i) {
+
+				f_name.push(" " + $(this).get(0).files[i].name);
+
+			}
+
+			$nameFile.html(f_name);
+			$nameFile.attr("title", f_name);
+		});
 	});
 
 // Слайдер наши работы

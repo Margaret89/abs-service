@@ -1214,17 +1214,17 @@ input[type="submit"].btn--border:hover-white {
   margin-bottom: 20px;
 }
 
-.form-site__label {
+.form-site__load {
+  margin-bottom: 50px;
+}
+
+.form-site__load-label {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
   color: #000;
   margin-bottom: 30px;
-}
-
-.form-site__fields + .btn {
-  margin-top: 50px;
 }
 
 .form-site .load-more {
