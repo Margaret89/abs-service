@@ -1,0 +1,44 @@
+/*-------------- subscribe -----------------*/
+.subscribe-wrap{
+	margin: 62px 0 92px;
+
+	&__head{
+		@include font(normal, 600, 32px, 1.2, #000);
+		text-transform: uppercase;
+	}
+}
+
+.subscribe-form{
+	&__content{
+		display: flex;
+	}
+
+	input[type="text"],
+	input[type="email"]{
+		height: 50px;
+		width: calc(100% - 180px);
+		outline: none;
+		border: 1px solid #d5d5d5;
+		@include font(normal, normal, 16px, 48px, $color-text);
+		padding: 0 15px;
+		box-shadow: none;
+	}
+
+	input[data-icon="email"]{
+		padding-left: 45px;
+		box-shadow: none;
+	}
+
+	input[data-icon="email"]{background: url(#{$path-icon}/ic-mail.svg) no-repeat 15px 50%;}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus{
+		border-color: $color-text;
+	}
+
+	.btn,
+	input[type="submit"].btn{
+		width: 180px;
+		min-width: 180px;
+	}
+}

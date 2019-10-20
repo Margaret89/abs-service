@@ -2432,3 +2432,209 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
   width: 100%;
   margin: 0;
 }
+
+/*-------------- sale -----------------*/
+.sale-list {
+  margin-top: 27px;
+}
+
+.sale-list__item {
+  display: block;
+  width: 100%;
+  min-height: 380px;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sale-list__item::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sale-list__item:hover::before {
+  background: rgba(17, 17, 17, 0.25);
+}
+
+.sale-list__content {
+  width: 100%;
+  position: relative;
+  padding: 47px 50px;
+}
+
+.sale-list__date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+}
+
+.sale-list__date::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  background: url(../img/icon/ic-alarm.svg) no-repeat center;
+}
+
+.sale-list__name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.sale-list__item--big {
+  display: flex;
+  align-items: center;
+  min-height: 560px;
+  text-align: center;
+}
+
+.sale-list__item--big .sale-list__date {
+  font-size: 20px;
+  margin-bottom: 27px;
+}
+
+.sale-list__item--big .sale-list__name {
+  max-width: 700px;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.sale-list__item--border::before, .sale-list__item--color::before {
+  display: none;
+}
+
+.sale-list__item--border {
+  border: 3px solid #e5e5e5;
+}
+
+.sale-list__item--border .sale-list__date,
+.sale-list__item--border .sale-list__name {
+  color: #222222;
+}
+
+.sale-list__item--border .sale-list__date::before {
+  background-image: url(../img/icon/ic-alarm-color.svg);
+}
+
+.sale-list__item--border:hover {
+  border-color: #222222;
+}
+
+.sale-list__item--color {
+  background: #e23535;
+}
+
+.sale-list__item--color:hover {
+  background: #EF3939;
+}
+
+/*-------------- subscribe -----------------*/
+.subscribe-wrap {
+  margin: 62px 0 92px;
+}
+
+.subscribe-wrap__head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.subscribe-form__content {
+  display: flex;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+  height: 50px;
+  width: calc(100% - 180px);
+  outline: none;
+  border: 1px solid #d5d5d5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 48px;
+  color: #222222;
+  padding: 0 15px;
+  box-shadow: none;
+}
+
+.subscribe-form input[data-icon="email"] {
+  padding-left: 45px;
+  box-shadow: none;
+}
+
+.subscribe-form input[data-icon="email"] {
+  background: url(../img/icon/ic-mail.svg) no-repeat 15px 50%;
+}
+
+.subscribe-form input[type="text"]:focus,
+.subscribe-form input[type="email"]:focus {
+  border-color: #222222;
+}
+
+.subscribe-form .btn,
+.subscribe-form input[type="submit"].btn {
+  width: 180px;
+  min-width: 180px;
+}
+
+/*----------- pager -------------*/
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 20px;
+}
+
+.pager__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: #222222;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+}
+
+.pager__item.active {
+  background: #222222;
+  color: #fff;
+}
+
+.pager__item:hover {
+  color: #EF3939;
+}
+
+.pager__item.active:hover {
+  color: #fff;
+}
+
+.pager__item:not(:last-child) {
+  margin-right: 15px;
+}
