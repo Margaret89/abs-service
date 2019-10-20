@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Главная страница</title>
+		<title>Услуги</title>
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
 		<link rel="stylesheet" href="js/vendor/slick/slick.css">
@@ -126,222 +126,35 @@
 				</div>
 			</header>
 			<main>
-				<div style="display: none;" id="sale-popup" class="sale-popup js-sale-popup">
-					<div class="sale-popup__content">
-						<div class="sale-popup__img">
-							<img src="img/sale-popup.jpg" alt="">
-						</div>
-
-						<div class="sale-popup__desc">
-							<div class="sale-popup__head">Ограниченное предложение на ТО</div>
-
-							<div class="sale-popup__counter">
-
-								<div class="countdown-wrap">
-									<div class="countdown-wrap__title">До конца акции осталось</div>
-
-									<div class="js-countdown"></div>
-								</div>
-
-								<script type="text/javascript">
-									$(document).ready(function () {
-										// Инициализация таймера
-										$('.js-countdown').syotimer({
-											year: 2019,
-											month: 11,
-											day: 25,
-											hour: 12,
-											minute: 0,
-											lang: 'rus'
-										});
-									});
-								</script>
-							</div>
-						</div>
-
-						<div class="form-site js-valid-form">
-							<form method="get">
-								<div class="form-site__fields">
-									<input type="text" data-icon="person" placeholder="Ваше имя" required="required">
-
-									<input type="text" class="js-phone" data-icon="phone" placeholder="Телефон" required="required">
-
-									<input type="email" data-icon="email" placeholder="E-mail">
-
-									<textarea class="form-site__hide js-result-steps"></textarea>
-
-									<input type="submit" name="Оставить заявку" class="btn">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div><!-- end sale-popup -->
-
-				<section class="slider-top js-slider-top first-elem">
-					<div class="slider-top__item" style="background-image: url(img/slider-top1.jpg);">
-						<div class="slider-top__content">
-							<div class="slider-top__desc">
-								<div class="slider-top__head">Шиномонтаж</div>
-
-								<div class="slider-top__text">При единовременном прохождении в&nbsp;апреле Вы получаете специальную цену на монтаж</div>
-
-								<img src="img/triangle-left.png" alt=""  class="slider-top__bg-left">
-							</div>
-
-							<div class="slider-top__price">
-								От <span class="slider-top__price-num">2000</span> руб
-								<img src="img/triangle-right.png" alt=""  class="slider-top__bg-right">
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-top__item" style="background-image: url(img/slider-top2.jpg);">
-						<div class="slider-top__content">
-							<div class="slider-top__desc">
-								<div class="slider-top__head">Покраска</div>
-
-								<div class="slider-top__text">При единовременном прохождении в&nbsp;апреле Вы получаете специальную цену на монтаж. При единовременном прохождении в&nbsp;апреле Вы получаете специальную цену на монтаж</div>
-
-								<img src="img/triangle-left.png" alt=""  class="slider-top__bg-left">
-							</div>
-
-							<div class="slider-top__price">
-								От <span class="slider-top__price-num">1500</span> руб
-								<img src="img/triangle-right.png" alt=""  class="slider-top__bg-right">
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-top__item" style="background-image: url(img/slider-top1.jpg);">
-						<div class="slider-top__content">
-							<div class="slider-top__desc">
-								<div class="slider-top__head">Шиномонтаж2</div>
-
-								<div class="slider-top__text">При единовременном прохождении</div>
-
-								<img src="img/triangle-left.png" alt=""  class="slider-top__bg-left">
-							</div>
-
-							<div class="slider-top__price">
-								От <span class="slider-top__price-num">2500</span> руб
-								<img src="img/triangle-right.png" alt=""  class="slider-top__bg-right">
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-top__item" style="background-image: url(img/slider-top2.jpg);">
-						<div class="slider-top__content">
-							<div class="slider-top__desc">
-								<div class="slider-top__head">Покраска2</div>
-
-								<div class="slider-top__text">При единовременном прохождении в&nbsp;апреле Вы получаете специальную цену на монтаж. При единовременном прохождении</div>
-
-								<img src="img/triangle-left.png" alt=""  class="slider-top__bg-left">
-							</div>
-
-							<div class="slider-top__price">
-								От <span class="slider-top__price-num">4500</span> руб
-								<img src="img/triangle-right.png" alt=""  class="slider-top__bg-right">
-							</div>
-						</div>
-					</div>
-				</section><!-- end slider-top -->
-
-				<section class="services">
+				<section>
 					<div class="container">
 						<div class="row">
-							<div class="col-12">
-								<div class="h1">Основные услуги автосервиса ABC-AUTO</div>
-							</div>
-						</div>
+							<div class="col-6">
+								<div class="info-block">
+									<div class="info-block__title">Техническое</div>
 
-						<div class="row align-items-center">
-							<div class="col-3">
-								<div class="services__list">
-									<div class="services__item js-services-item active" data-item="1">
-										<div class="services__icon"><img src="img/icon-service1.svg" alt=""></div>
+									<div class="info-block__content">
+										<div class="info-block__subtitle"> обслуживание</div>
 
-										<div class="services__name">Кузовной ремонт</div>
-									</div>
+										<div class="info-block__text js-read-more" data-count="970">
+											<p>Своевременное техническое обслуживание помогает выявить имеющиеся неисправности, значительно снизить затраты автовладельца на топливо, а также продлевает срок службы автомобиля. Все это позволяет экономить денежные средства и время владельца железного коня. Важным фактором, влияющим на периодичность выполнения ТО, являются условия эксплуатации автомобиля.</p>
 
-									<div class="services__item js-services-item" data-item="2">
-										<div class="services__icon"><img src="img/icon-service2.svg" alt=""></div>
+											<p>При выполнении технического обслуживания в сервисных центрах «РОЛЬФ» мы гарантируем, что вашим авто будет заниматься только квалифицированный и внимательный персонал, мы будем использовать только оригинальные комплектующие и расходные материалы, дополнительные и скрытые затраты будут полностью исключены, а все работы будут выполнены максимально быстро, чтобы вы не испытывали неудобства, вызванного отсутствием авто.</p>
 
-										<div class="services__name">Шиномонтаж</div>
-									</div>
+											<p>Плановое техническое обслуживание автомобиля необходимо техническое обслуживание помогает выявить имеющиеся неисправности, значительно снизить затраты автовладельца на топливо, а также продлевает срок службы автомобиля. Все это позволяет экономить денежные средства и время владельца железного коня. Важным фактором, влияющим на периодичность выполнения ТО, являются условия эксплуатации автомобиля.</p>
 
-									<div class="services__item js-services-item" data-item="3">
-										<div class="services__icon"><img src="img/icon-service3.svg" alt=""></div>
-
-										<div class="services__name">Слесарный ремонт</div>
-									</div>
-
-									<div class="services__item js-services-item" data-item="4">
-										<div class="services__icon"><img src="img/icon-service4.svg" alt=""></div>
-
-										<div class="services__name">Техническое обслуживание</div>
-									</div>
-
-									<div class="services__item js-services-item" data-item="5">
-										<div class="services__icon"><img src="img/icon-service5.svg" alt=""></div>
-
-										<div class="services__name">Диагностика</div>
+											<p>При выполнении технического обслуживания в сервисных центрах «РОЛЬФ» мы гарантируем, что вашим авто будет заниматься только квалифицированный и внимательный персонал, мы будем использовать только оригинальные комплектующие и расходные материалы, дополнительные и скрытые затраты будут полностью исключены, а все работы будут выполнены максимально быстро, чтобы вы не испытывали неудобства, вызванного отсутствием авто.</p>
+										</div>
 									</div>
 								</div>
 							</div>
 
 							<div class="col-6">
-								<div class="services__img-wrap">
-									<img src="img/service1.jpg" alt="" class="services__img js-services-img active" data-item="1">
-									<img src="img/service2.jpg" alt="" class="services__img js-services-img" data-item="2">
-									<img src="img/service3.jpg" alt="" class="services__img js-services-img" data-item="3">
-									<img src="img/service4.jpg" alt="" class="services__img js-services-img" data-item="4">
-									<img src="img/service5.jpg" alt="" class="services__img js-services-img" data-item="5">
-									<img src="img/service6.jpg" alt="" class="services__img js-services-img" data-item="6">
-									<img src="img/service7.jpg" alt="" class="services__img js-services-img" data-item="7">
-									<img src="img/service8.jpg" alt="" class="services__img js-services-img" data-item="8">
-									<img src="img/service9.jpg" alt="" class="services__img js-services-img" data-item="9">
-									<img src="img/service10.jpg" alt="" class="services__img js-services-img" data-item="10">
-								</div>
-							</div>
-
-							<div class="col-3">
-								<div class="services__list services__list--right">
-									<div class="services__item js-services-item" data-item="6">
-										<div class="services__icon"><img src="img/icon-service6.svg" alt=""></div>
-
-										<div class="services__name">Замена масла</div>
-									</div>
-
-									<div class="services__item js-services-item" data-item="7">
-										<div class="services__icon"><img src="img/icon-service7.svg" alt=""></div>
-
-										<div class="services__name">Удаленное урегулирование убытков</div>
-									</div>
-
-									<div class="services__item js-services-item" data-item="8">
-										<div class="services__icon"><img src="img/icon-service8.svg" alt=""></div>
-
-										<div class="services__name">Сход развал</div>
-									</div>
-
-									<div class="services__item js-services-item" data-item="9">
-										<div class="services__icon"><img src="img/icon-service9.svg" alt=""></div>
-
-										<div class="services__name">Продление полиса КАСКО и ОСАГО</div>
-									</div>
-
-									<div class="services__item js-services-item" data-item="10">
-										<div class="services__icon"><img src="img/icon-service10.svg" alt=""></div>
-
-										<div class="services__name">Запасные части</div>
-									</div>
-								</div>
+								<img src="img/to.jpg" alt="">
 							</div>
 						</div>
 					</div>
-				</section><!-- end services -->
-
+				</section>
 
 				<section class="calc">
 					<div class="container">
@@ -780,254 +593,35 @@
 					</div>
 				</section><!-- end calc -->
 
-				<section class="advant-wrap">
+				<section class="popular-service">
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<div class="h1">Преимущества нашего сервиса</div>
-							</div>
-						</div>
+								<div class="popular-service__content">
+									<div class="popular-service__head">Популярные услуги по ТО</div>
 
-						<div class="advant-list">
-							<div class="row">
-								<div class="col-4">
-									<div class="advant-list__item">
-										<div class="advant-list__icon">
-											<img src="img/icon-person.svg" alt="">
-										</div>
+									<div class="popular-service__list">
+										<a href="#" class="popular-service__item">Беспокрасочное удаления вмятин</a>
 
-										<div class="advant-list__head">Поддержка клиентов 24/7</div>
+										<a href="#" class="popular-service__item">Наше портфолио</a>
 
-										<div class="advant-list__text">Круглосуточная Горячая Линия для клиентов ABC-SERVICE - мы всегда рядом с Вами.</div>
-									</div>
-								</div>
+										<a href="#" class="popular-service__item">Покраска капота</a>
 
-								<div class="col-4">
-									<div class="advant-list__item">
-										<div class="advant-list__icon">
-											<img src="img/icon-photo.svg" alt="">
-										</div>
+										<a href="#" class="popular-service__item">Рамонт и покраска бампера</a>
 
-										<div class="advant-list__head">Оценка ремонта авто по фото</div>
+										<a href="#" class="popular-service__item">Удаление вмятин</a>
 
-										<div class="advant-list__text">Наши специалисты выполнят оценку повреждений автомобиля на профессиональном уровне.</div>
-									</div>
-								</div>
+										<a href="#" class="popular-service__item">Удаление сколков и царапин</a>
 
-								<div class="col-4">
-									<div class="advant-list__item">
-										<div class="advant-list__icon">
-											<img src="img/icon-service.svg" alt="">
-										</div>
+										<a href="#" class="popular-service__item">Удаление сколков и трещин</a>
 
-										<div class="advant-list__head">Прозрачный сервис</div>
-
-										<div class="advant-list__text">Мы всегда рады видеть Вас в нашей сервисной зоне при обслуживании Вашего автомобиля</div>
+										<a href="#" class="popular-service__item">Удаление вмятин с покраской</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section><!-- end advant-wrap -->
-
-				<section class="reason-wrap">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="h1">8 поводов обратиться к нам</div>
-							</div>
-						</div>
-
-						<div class="reason-list">
-							<div class="row">
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">01</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Гарантия 6 месяцев</div>
-
-											<div class="reason-list__text">Клиенты автосервисов DDCAR получают гарантию на выполенния работы - 6 месяцев</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">02</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Сохраняем гарантию производителя</div>
-
-											<div class="reason-list__text">После ремонта или любого вида обслуживания сохраняется гарантия производитея на все детали и запасные части</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">03</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Выдача автомобиля вовремя!</div>
-
-											<div class="reason-list__text">Автовладельцу передают машину точно в указанный оператором срок</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">04</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Ремонтируем только поломки</div>
-
-											<div class="reason-list__text">Специалисты тщательно диагностируют и проверяют автомобиль, выявляют и устраняют только реальные&nbsp;поломки</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">05</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Приятные скидки клиентам</div>
-
-											<div class="reason-list__text">На определнные услуги предусмотрены скидки, поэтому ремонт и ТО возможны с минимальными затратами</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">06</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Подскажем где заказать запчасти</div>
-
-											<div class="reason-list__text">Наши специалисты готовы помоць и проконсультировать по&nbsp;вопросам покупки запасных частей в рамках выделенного бюуджета</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">07</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Вкусный кофе</div>
-
-											<div class="reason-list__text">В нашем австосервисе заваривают ароматный кофе, который поднимает настроение независимо от решения механиков</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-6">
-									<div class="reason-list__item">
-										<div class="reason-list__num">08</div>
-
-										<div class="reason-list__content">
-											<div class="reason-list__head">Уютная зона ожидания</div>
-
-											<div class="reason-list__text">Пока проверяют или обслуживают автомобиль, клиентам предлагают провести время в зоне ожидания с мягкой мебелью, интернетом и другими удобствами</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</section><!-- end reason-wrap -->
-
-				<section class="partner-wrap">
-					<div class="container">
-						<div class="row">
-							<div class="col-3">
-								<div class="h1">Наши партнеры</div>
-							</div>
-
-							<div class="col-8">
-								<div class="partner-slider js-partner-slider">
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand5.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand2.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand7.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand4.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand1.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand3.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand6.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand8.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand9.png" alt=""></a>
-									</div>
-
-									<div class="partner-slider__item">
-										<a href="#" class="partner-slider__link"><img src="img/brand10.png" alt=""></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section><!-- end partner-wrap -->
-
-				<section class="about last-elem">
-					<div class="container">
-						<div class="row">
-							<div class="col-6">
-								<div class="info-block">
-									<div class="info-block__title">О нашем </div>
-
-									<div class="info-block__content">
-										<div class="info-block__subtitle">автосервисе</div>
-
-										<div class="info-block__text js-read-more" data-count="545">
-											<p>Автосервис «АБС» предлагает качественный ремонт автомобилей в Москве по приемлемым ценам. Мы профессионально ремонтируем машины всех марок любых лет выпуска уже далеко не первый год.</p>
-
-											<p>Для многих владельцев автомобилей наш автосервис является одним из немногих, где можно устранить практически любую неисправность.. Благодаря многолетнему опыту и профессиональному обучению наши специалисты справятся с любой поставленной задачей по ремонту автомобиля.</p>
-
-											<p>Автосервис «АБС» предлагает качественный ремонт автомобилей в Москве по приемлемым ценам. Мы профессионально ремонтируем машины всех марок любых лет выпуска уже далеко не первый год.</p>
-
-											<p>Для многих владельцев автомобилей наш автосервис является одним из немногих, где можно устранить практически любую неисправность.. Благодаря многолетнему опыту и профессиональному обучению наши специалисты справятся с любой поставленной задачей по ремонту автомобиля.</p>
-
-											<p>Автосервис «АБС» предлагает качественный ремонт автомобилей в Москве по приемлемым ценам. Мы профессионально ремонтируем машины всех марок любых лет выпуска уже далеко не первый год.</p>
-
-											<p>Для многих владельцев автомобилей наш автосервис является одним из немногих, где можно устранить практически любую неисправность.. Благодаря многолетнему опыту и профессиональному обучению наши специалисты справятся с любой поставленной задачей по ремонту автомобиля.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-6">
-								<div class="about__img"><img src="img/about.jpg" alt=""></div>
-							</div>
-						</div>
-					</div>
-				</section><!-- end about -->
+				</section><!-- end popular-service -->
 			</main>
 			<footer class="footer">
 				<div class="footer__top">
