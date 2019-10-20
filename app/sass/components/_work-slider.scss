@@ -1,0 +1,103 @@
+/*-------------- work-slider -----------------*/
+.example-works{
+	margin-bottom: 100px;
+	
+	h1,
+	.h1{
+		margin-bottom: 60px;
+	}
+}
+
+.works-slider{
+	&__list{
+		display: none;
+	}
+
+	&__list.slick-initialized{
+		display: block;
+	}
+
+	&__item{
+		position: relative;
+	}
+
+	&__item::before{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 140px;
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	&__img-wrap{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__img{
+		width: 50%;
+		height: 440px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__text{
+		width: 430px;
+		max-width: 50%;
+		@include font(normal, bold, 20px, 1.2, #fff);
+		padding: 35px 40px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	&__counter-wrap{
+		display: flex;
+		justify-content: center;
+		width: 165px;
+		position: absolute;
+		bottom: 30px;
+		right: 55px;
+	}
+
+	&__counter{
+		@include font(normal, 300, 40px, 1.25, #fff);
+	}
+
+	&__counter span{
+		font-weight: normal;
+		font-size: 18px;
+		color: #999;
+	}
+
+	.slick-arrow{
+		display: inline-block;
+		width: 35px;
+		height: 16px;
+		outline: 0;
+		border: 0;
+		font-size: 0;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		@include top-center;
+		cursor: pointer;
+	}
+
+	.slick-prev{
+		left: 0;
+		background: url(#{$path-icon}/arr-left-grey.svg) no-repeat center;
+	}
+
+	.slick-next{
+		right: 0;
+		background: url(#{$path-icon}/arr-right-grey.svg) no-repeat center;
+	}
+
+	.slick-prev:hover{background-image:url(#{$path-icon}/arr-left-white.svg);}
+	.slick-next:hover{background-image:url(#{$path-icon}/arr-right-white.svg);}
+}

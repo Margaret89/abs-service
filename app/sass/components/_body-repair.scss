@@ -8,8 +8,9 @@
 	}
 
 	&__content{
-		padding-bottom: 50px;
 		border-bottom: 1px solid #e5e5e5;
+		padding-bottom: 92px;
+		margin-bottom: 90px;
 	}
 
 	&__text{
@@ -28,6 +29,10 @@
 		width: 34%;
 		background: $color-text;
 		padding: 30px;
+
+		svg{
+			width: 100%;
+		}
 	}
 
 	.tabs-page{
@@ -42,6 +47,11 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		width: 100%;
+
+		svg{
+			width: 100%;
+		}
 	}
 }
 

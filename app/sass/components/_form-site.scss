@@ -14,6 +14,7 @@
 	&__fields{
 		display: flex;
 		justify-content: space-between;
+		margin-top: 23px;
 	}
 
 	input[type="text"],
@@ -26,6 +27,7 @@
 		@include font(normal, normal, 16px, 48px, $color-text);
 		padding: 0 15px;
 		margin-right: 30px;
+		box-shadow: none;
 	}
 
 	textarea{
@@ -56,6 +58,31 @@
 
 	&__hide{
 		display: none;
+	}
+
+	&__col{
+		width: calc(50% - 15px);
+	}
+
+	&__col input[type="text"],
+	&__col input[type="email"],
+	&__col textarea{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	&__label{
+		@include font(normal, normal, 16px, 1.2, #000);
+		margin-bottom: 30px;
+	}
+
+	&__fields + .btn{
+		margin-top: 50px;
+	}
+
+	.load-more{
+		width: 240px;
 	}
 }
 

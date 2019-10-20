@@ -1,0 +1,29 @@
+/*-------------- file-upload -----------------*/
+.file-upload{
+	display: block;
+	vertical-align: middle;
+	margin-bottom: 20px;
+
+	input[type="file"]{
+		display: none;
+	}
+
+	&__content{
+		display: flex;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+
+	.btn{
+		width: 240px;
+		margin-right: 30px;
+	}
+
+	&__name{
+		display: inline-block;
+		@include font(normal, normal, 16px, 48px, #000);
+		text-overflow: ellipsis;
+		width: calc(100% - 270px);
+		overflow: hidden;
+	}
+}

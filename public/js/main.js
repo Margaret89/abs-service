@@ -260,8 +260,6 @@ if ($('.js-elem-car').length) {
 	});
 }
 
-	
-
 // Разворачиваем все пункты фильтра
 	if ($('.js-filter-more').length) {
 		var statusFilter = false;
@@ -282,6 +280,56 @@ if ($('.js-elem-car').length) {
 		});
 	}
 
+// Кнопка загрузки файла
+	$('.js-input-file').change(function(){
+		var f_name = [];
+
+		for (var i = 0; i < $(this).get(0).files.length; ++i) {
+
+			f_name.push(" " + $(this).get(0).files[i].name);
+
+		}
+
+		$(".js-name-file").html(f_name);
+		$(".js-name-file").attr("title", f_name)
+	});
+
+// Слайдер наши работы
+	if ($('.js-works-slider').length) {
+		var $counterSlider = $('.js-works-slider-counter');
+		var $topSlider = $('.js-works-slider');
+
+		$topSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+			var curSlide = (currentSlide ? currentSlide : 0) + 1;
+			var slideCount = slick.slideCount;
+
+			if (slideCount < 10) {
+				slideCount = '0' + slideCount;
+			}
+
+			if (curSlide < 10) {
+				curSlide = '0' + curSlide;
+			}
 
 
+			$counterSlider.html(curSlide + '<span>/' + slideCount) + '</span>';
+		});
+
+		$topSlider.slick({
+			dots: false,
+			arrows: true,
+			infinite: true,
+			slidesToShow: 1,
+			appendArrows: $('.js-works-slider-arrow'),
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false,
+						dots: true,
+					}
+				},
+			]
+		});
+	}
 });
