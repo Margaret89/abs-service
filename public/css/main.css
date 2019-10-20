@@ -277,8 +277,8 @@ input[type="submit"].btn--border-white {
   color: #fff;
 }
 
-.btn--border:hover-white,
-input[type="submit"].btn--border:hover-white {
+.btn--border-white:hover,
+input[type="submit"].btn--border-white:hover {
   background: #fff;
   color: #e23535;
 }
