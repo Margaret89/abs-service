@@ -56,6 +56,10 @@
 		list-style: none;
 	}
 
+	&__sub-item::before{
+		display: none;
+	}
+
 	&__sub{
 		display: none;
 		width: 400px;

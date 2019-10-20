@@ -1,0 +1,12 @@
+/*-------------- notice -----------------*/
+.notice{
+	padding: 28px 37px 36px;
+	border: 3px solid #e5e5e5;
+	@include font(italic, normal, 16px, 1.5, #000);
+	margin: 32px 0;
+}
+
+.notice + h2,
+.notice + .h2{
+	margin-top: 58px;
+}

@@ -1,0 +1,33 @@
+/*-------------- share -----------------*/
+.share{
+	display: flex;
+	align-items: center;
+
+	&__label{
+		@include font(normal, 600, 16px, 1.2, #000);
+		text-transform: uppercase;
+		margin-right: 20px;
+	}
+
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 40px;
+		background: $color-text;
+	}
+
+	&__item:not(:last-child){
+		margin-right: 20px;
+	}
+
+	&__item:hover{background: #5181B8;}
+	&__item--fb:hover{background: #3f5b9c;}
+	&__item--tw:hover{background: #00aced;}
+}

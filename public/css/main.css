@@ -118,7 +118,7 @@ h2,
   font-size: 32px;
   line-height: 1.2;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h3,
@@ -159,6 +159,11 @@ h6,
   line-height: 1.2;
   color: #222222;
   margin-bottom: 0;
+}
+
+p + h2,
+p + .h2 {
+  margin-top: 50px;
 }
 
 ul {
@@ -577,6 +582,10 @@ input[type="submit"].btn--border:hover-white {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-menu__sub-item::before {
+  display: none;
 }
 
 .main-menu__sub {
@@ -2637,4 +2646,129 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
 
 .pager__item:not(:last-child) {
   margin-right: 15px;
+}
+
+/*-------------- sale-detail -----------------*/
+.sale-detail__head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.sale-detail__date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+  margin-top: 33px;
+  margin-bottom: 64px;
+}
+
+.sale-detail__date::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background: url(../img/icon/ic-alarm-color.svg) no-repeat center;
+}
+
+.sale-detail__photo {
+  margin-bottom: 61px;
+}
+
+.sale-detail__text {
+  margin-top: 61px;
+}
+
+.sale-detail__text ul {
+  margin-bottom: 35px;
+}
+
+.sale-detail__text ul li {
+  margin-bottom: 25px;
+}
+
+.sale-detail__share {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 62px;
+}
+
+.other-sale h1,
+.other-sale .h1 {
+  font-size: 32px;
+  text-align: left;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 95px;
+  margin-bottom: 33px;
+  padding-top: 93px;
+}
+
+/*-------------- notice -----------------*/
+.notice {
+  padding: 28px 37px 36px;
+  border: 3px solid #e5e5e5;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  margin: 32px 0;
+}
+
+.notice + h2,
+.notice + .h2 {
+  margin-top: 58px;
+}
+
+/*-------------- share -----------------*/
+.share {
+  display: flex;
+  align-items: center;
+}
+
+.share__label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.share__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.share__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  background: #222222;
+}
+
+.share__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.share__item:hover {
+  background: #5181B8;
+}
+
+.share__item--fb:hover {
+  background: #3f5b9c;
+}
+
+.share__item--tw:hover {
+  background: #00aced;
 }
