@@ -1,0 +1,49 @@
+/*-------------- switch -----------------*/
+.switch{
+	&__label{
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		position: relative;
+		@include font(normal, 600, 18px, 1.2, $color-text);
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	&__mark{
+		display: inline-block;
+		width: 50px;
+		height: 20px;
+		border: 0;
+		outline: 0;
+		border-radius: 10px;
+		background: #e5e5e5;
+		position: relative;
+	}
+
+	&__mark::after{
+		content: '';
+		display: inline-block;
+		width: 26px;
+		height: 26px;
+		background: $color-text;
+		border-radius: 50%;
+		position: absolute;
+		@include top-center;
+		left: 0;
+		transition: all 0.3s ease;
+	}
+
+	&__text{
+		max-width: calc(100% - 62px);
+		margin-left: 12px;
+	}
+
+	input[type=checkbox]:checked + &__label &__mark::after{
+		background: $color-red;
+		left: auto;
+		right: 0;
+	}
+}

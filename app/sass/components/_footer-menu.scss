@@ -16,6 +16,10 @@
 		margin-bottom: 16px;
 	}
 
+	&__item::before{
+		display: none;
+	}
+
 	&__link{
 		@include font(normal, 600, 14px, 1.2, #fff);
 		text-transform: uppercase;

@@ -24,4 +24,8 @@
 	&__item:hover &__link{
 		color: $color-grey;
 	}
+
+	&__item::before{
+		display: none;
+	}
 }

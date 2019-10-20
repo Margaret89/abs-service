@@ -1,0 +1,110 @@
+/*-------------- chosen-result -----------------*/
+.chosen-result{
+	display: none;
+
+	&.active{
+		display: block;
+	}
+	
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px solid #e5e5e5;
+		padding-top: 44px;
+	}
+
+	&__btn{
+		display: flex;
+		align-items: center;
+		width: calc(100% - 325px);
+	}
+
+	&__btn-label{
+		max-width: 485px;
+		@include font(normal, normal, 16px, 1.5, $color-text);
+		margin-left: 30px;
+	}
+}
+
+.chosen-res-list{
+	&__item{
+		display: none;
+		justify-content: space-between;
+		padding: 26px 0 18px;
+		border-top: 1px solid #e5e5e5;
+	}
+
+	&__item.active{
+		display: flex;
+	}
+
+	&__head{
+		width: 257px;
+		padding-right: 30px;
+	}
+
+	&__title{
+		@include font(normal, normal, 14px, 1.2, $color-grey);
+		text-transform: uppercase;
+		margin-bottom: 8px;
+	}
+
+	&__text{
+		@include font(normal, 600, 18px, 1.2, $color-text);
+	}
+
+	&__service-list{
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100% - 357px);
+	}
+
+	&__service{
+		min-width: 138px;
+	}
+
+	&__service:not(:last-child){
+		margin-right: 30px;
+	}
+
+	&__sum{
+		min-width: 100px;
+		padding-left: 30px;
+	}
+
+	&__sum &__text{
+		white-space: nowrap;
+	}
+}
+
+.chosen-res-sum{
+	display: flex;
+
+	&__item{
+		text-align: center;
+		padding: 0 55px;
+	}
+
+	&__item:first-child{
+		padding-left: 0;
+	}
+
+	&__item:last-child{
+		padding-right: 0;
+	}
+
+	&__item:not(:last-child){
+		border-right: 1px solid #e5e5e5;
+	}
+
+	&__title{
+		@include font(normal, normal, 14px, 1.2, $color-grey);
+		text-transform: uppercase;
+	}
+
+	&__num{
+		@include font(normal, 600, 32px, 1.2, $color-text);
+		margin-top: 8px;
+	}
+}

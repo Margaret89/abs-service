@@ -119,11 +119,6 @@ $(document).ready(function () {
 		$.fancybox.open({
 			src  : '#sale-popup',
 			type : 'inline',
-			// opts : {
-			// 	afterShow : function( instance, current ) {
-			// 		console.info( 'done!' );
-			// 	}
-			// }
 		});
 	}
 
@@ -173,17 +168,120 @@ $(document).ready(function () {
 		});
 	}
 
-// Подсветка элементов машины при наведении
 if ($('.js-elem-car').length) {
-	$('.js-elem-car').hover(
-		function(){
-			var idItem = $(this).attr('id');
+// Подсветка элементов машины при наведении
+	var selectElemCar = 0;
+	var sumElemCar = 0;
+	var sumAllElemCar = 0;
 
-			$('.js-elem-drawing').find('#'+idItem).addClass('hover');
-			$('.js-tabs-page-content-item.active').find('#'+idItem).addClass('hover');
-		},
-		function(){
-			$('.js-elem-car').removeClass('hover');
+	$('.js-elem-car').hover(
+	function(){
+		var idItem = $(this).attr('id');
+
+		$('.js-elem-drawing').find('#'+idItem).addClass('hover');
+		$('.js-tabs-page-content-item').find('#'+idItem).addClass('hover');
+	},
+	function(){
+		$('.js-elem-car').removeClass('hover');
+	});
+
+	$('.js-elem-car').click(function(){
+		var idItem = $(this).attr('id');
+		var $allElemSum = $('.js-all-elem-sum');
+		var sumCurElem =  parseInt($('#'+idItem+'.js-chosen-res-item').find('.js-sum-elem').text());
+
+		$('.js-elem-drawing').find('#'+idItem).toggleClass('active');
+		$('.js-tabs-page-content-item').find('#'+idItem).toggleClass('active');
+
+		// Добавляем строку с ценами выбранного элемента, пересчитываем количество и общую цену
+		$('#'+idItem+'.js-chosen-res-item').toggleClass('active');
+
+		var sumService = parseInt($(this).siblings('.js-switch-label').find('.js-sum-service').text());
+
+
+		if ($('#'+idItem+'.js-chosen-res-item').hasClass('active')) {
+			selectElemCar++;
+			$allElemSum.text(parseInt($allElemSum.text()) + sumCurElem);
+		}else{
+			selectElemCar--;
+			$allElemSum.text(parseInt($allElemSum.text()) - sumCurElem);
+		}
+
+		$('.js-count-elem-car').text(selectElemCar);
+
+		if (selectElemCar == 0) {
+			$('.js-chosen-result').removeClass('active');
+		}else{
+			$('.js-chosen-result').addClass('active');
+		}
+	});
+
+	// Показываем цену выбранных элементов машины
+	// Проверяем выбранные элементы при загрузке страницы
+	$('.js-tabs-page-content-item.active').find('.js-elem-car.active').each(function(indx, element){
+		var idItem = $(this).attr('id');
+
+		selectElemCar++;
+
+		$('#'+idItem+'.js-chosen-res-item').addClass('active');
+	});
+
+	if (selectElemCar > 0) {
+		$('.js-chosen-result').addClass('active');
+		$('.js-count-elem-car').text(selectElemCar);
+	}
+
+	$('.js-service-list').each(function(indx, element){
+		$(this).find("input:checkbox:checked").each(function(indx, element){
+			sumElemCar = sumElemCar + parseInt($(this).siblings('.js-switch-label').find('.js-sum-service').text());
+		});
+
+		$(this).parents('.js-chosen-res-item').find('.js-sum-elem').text(sumElemCar);
+
+		sumAllElemCar = sumAllElemCar + sumElemCar;
+		sumElemCar = 0;
+	});
+
+	$('.js-all-elem-sum').text(sumAllElemCar);
+	
+	// Вычисляем сумму при выборе параметров
+	$(".js-service-list input[type='checkbox']").change(function() {
+		var $elemSum = $(this).parents('.js-chosen-res-item').find('.js-sum-elem');
+		var $allElemSum = $('.js-all-elem-sum');
+		var sumService = parseInt($(this).siblings('.js-switch-label').find('.js-sum-service').text());
+
+		if ($(this).prop("checked")) {
+			$elemSum.text(parseInt($elemSum.text()) + sumService);
+			$allElemSum.text(parseInt($allElemSum.text()) + sumService);
+		}else{
+			$elemSum.text(parseInt($elemSum.text()) - sumService);
+			$allElemSum.text(parseInt($allElemSum.text()) - sumService);
+		}
+	});
+}
+
+	
+
+// Разворачиваем все пункты фильтра
+	if ($('.js-filter-more').length) {
+		var statusFilter = false;
+		var curTextFilter = $('.js-filter-more').text();
+
+		$('.js-filter-more').click(function(e){
+			e.preventDefault();
+
+			if (statusFilter == false) {
+				$('.js-filter-list').addClass('show-all');
+				$(this).text('Свернуть');
+				statusFilter = true;
+			} else {
+				$('.js-filter-list').removeClass('show-all');
+				$(this).text(curTextFilter);
+				statusFilter = false;
+			}
 		});
 	}
+
+
+
 });

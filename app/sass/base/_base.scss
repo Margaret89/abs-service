@@ -26,6 +26,27 @@ a:focus{
 	text-decoration: none;
 }
 
+.link-icon{
+	@include font(normal, normal, 16px, 1.5, $color-red);
+	text-decoration: none;
+
+	&__text{
+		border-bottom: 1px dashed $color-red;
+	}
+
+	img{
+		margin-right: 10px;
+	}
+
+	&:hover{
+		color: $color-red-light;
+	}
+
+	&:hover &__text{
+		border-bottom: 0;
+	}
+}
+
 p{
 	@include font(normal, normal, 16px, 1.5, $color-text);
 	padding: 0;
@@ -68,6 +89,46 @@ h6,
 .h6{
 	@include font(normal, 600, 20px, 1.2, $color-text);
 	margin-bottom: 0;
+}
+
+ul{
+	margin: 0;
+	margin-bottom: 23px;
+	padding: 0;
+	list-style: none;
+
+	li{
+		list-style: none;
+		margin-bottom: 14px;
+		padding-left: 20px;
+		position: relative;
+
+		&::before{
+			content: '';
+			display: inline-block;
+			vertical-align: top;
+			width: 10px;
+			height: 2px;
+			background: $color-red;
+			margin: 0.6em 10px 0 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+p + ul{
+	margin-top: -9px;
+}
+
+ol{
+	margin: 0 23px 0 0;
+	padding: 0 0 0 20px;
+
+	li{
+		margin-bottom: 14px;
+	}
 }
 
 .wrapper{

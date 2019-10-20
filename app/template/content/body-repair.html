@@ -13,80 +13,327 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<div class="h1">кузовной ремонт автомобиля /замена деталей / покраска</div>
+								<div class="body-repair__content">
+									<div class="h1">кузовной ремонт автомобиля /замена деталей / покраска</div>
 
-								<div class="body-repair__text">Хотите рассчитать предварительную стоимость ремонтных работ с вашим авто в техцентре «НЕМЕЦ»?<br>Используйте онлайн калькулятор кузовного ремонта и покраски (расходники и краска оплачиваются отдельно)!</div>
+									<div class="body-repair__text">Хотите рассчитать предварительную стоимость ремонтных работ с вашим авто в техцентре «НЕМЕЦ»?<br>Используйте онлайн калькулятор кузовного ремонта и покраски (расходники и краска оплачиваются отдельно)!</div>
 
-								<div class="choosen-elem">
-									<div class="tabs-page js-tabs-page">
-										<div class="tabs-page__top">
-											<div class="tabs-page__head">Выберите нужный элемент на схеме</div>
+									<div class="choosen-elem">
+										<div class="tabs-page js-tabs-page">
+											<div class="tabs-page__top">
+												<div class="tabs-page__head">Выберите нужный элемент на схеме</div>
 
-											<ul class="tabs-page__list js-tabs-page-list">
-												<li class="tabs-page__item js-tabs-page-item" data-item="tab1">
-													<div class="tabs-page__item-text">Sedan</div>
+												<ul class="tabs-page__list js-tabs-page-list">
+													<li class="tabs-page__item js-tabs-page-item" data-item="tab1">
+														<div class="tabs-page__item-text">Sedan</div>
 
-													<div class="tabs-page__img">
-														<img src="img/sedan.svg" alt="" class="tabs-page__img-def">
-														<img src="img/sedan-border.svg" alt="" class="tabs-page__img-border">
-														<img src="img/sedan-color.svg" alt="" class="tabs-page__img-color">
+														<div class="tabs-page__img">
+															<img src="img/sedan.svg" alt="" class="tabs-page__img-def">
+															<img src="img/sedan-border.svg" alt="" class="tabs-page__img-border">
+															<img src="img/sedan-color.svg" alt="" class="tabs-page__img-color">
+														</div>
+													</li>
+
+													<li class="tabs-page__item js-tabs-page-item" data-item="tab2">
+														<div class="tabs-page__item-text">Hatchback</div>
+
+														<div class="tabs-page__img">
+															<img src="img/hatchback.svg" alt="" class="tabs-page__img-def">
+															<img src="img/hatchback-border.svg" alt="" class="tabs-page__img-border">
+															<img src="img/hatchback-color.svg" alt="" class="tabs-page__img-color">
+														</div>
+													</li>
+
+													<li class="tabs-page__item active js-tabs-page-item" data-item="tab3">
+														<div class="tabs-page__item-text">Crossover</div>
+
+														<div class="tabs-page__img">
+															<img src="img/crossover.svg" alt="" class="tabs-page__img-def">
+															<img src="img/crossover-border.svg" alt="" class="tabs-page__img-border">
+															<img src="img/crossover-color.svg" alt="" class="tabs-page__img-color">
+														</div>
+													</li>
+												</ul>
+											</div>
+
+											<div class="tabs-page__content js-tabs-page-content">
+												<div id="tab1" class="tabs-page__content-item js-tabs-page-content-item">
+													<div class="marking-car">
+														<img src="img/sedan-big.svg" alt="">
 													</div>
-												</li>
+												</div>
 
-												<li class="tabs-page__item js-tabs-page-item" data-item="tab2">
-													<div class="tabs-page__item-text">Hatchback</div>
-
-													<div class="tabs-page__img">
-														<img src="img/hatchback.svg" alt="" class="tabs-page__img-def">
-														<img src="img/hatchback-border.svg" alt="" class="tabs-page__img-border">
-														<img src="img/hatchback-color.svg" alt="" class="tabs-page__img-color">
+												<div id="tab2" class="tabs-page__content-item js-tabs-page-content-item">
+													<div class="marking-car">
+														<img src="img/hatchback-big.svg" alt="">
 													</div>
-												</li>
+												</div>
 
-												<li class="tabs-page__item active js-tabs-page-item" data-item="tab3">
-													<div class="tabs-page__item-text">Crossover</div>
-
-													<div class="tabs-page__img">
-														<img src="img/crossover.svg" alt="" class="tabs-page__img-def">
-														<img src="img/crossover-border.svg" alt="" class="tabs-page__img-border">
-														<img src="img/crossover-color.svg" alt="" class="tabs-page__img-color">
+												<div id="tab3" class="tabs-page__content-item js-tabs-page-content-item">
+													<div class="marking-car">
+														<img src="img/crossover-big.svg" alt="">
+														<!-- <img src="img/crossover-parts.svg" alt=""> -->
+														<div class="marking-car__parts">
+															//= ../partials/crossover-parts.html
+														</div>
 													</div>
-												</li>
-											</ul>
+												</div>
+											</div>
+										</div><!-- end tabs-page -->
+
+										<div class="choosen-elem__drawing js-elem-drawing">
+											<!-- <img src="img/models.svg" alt=""> -->
+											//= ../partials/models.html
 										</div>
+									</div><!-- end choosen-elem -->
 
-										<div class="tabs-page__content js-tabs-page-content">
-											<div id="tab1" class="tabs-page__content-item js-tabs-page-content-item">
-												<div class="marking-car">
-													<img src="img/sedan-big.svg" alt="">
-												</div>
-											</div>
+									<div class="filter-wrap">
+										<div class="row">
+											<div class="col-9">
+												<div class="filter">
+													<div class="filter__title">Быстрый выбор:</div>
 
-											<div id="tab2" class="tabs-page__content-item js-tabs-page-content-item">
-												<div class="marking-car">
-													<img src="img/hatchback-big.svg" alt="">
-												</div>
-											</div>
-
-											<div id="tab3" class="tabs-page__content-item js-tabs-page-content-item">
-												<div class="marking-car">
-													<img src="img/crossover-big.svg" alt="">
-													<!-- <img src="img/crossover-parts.svg" alt=""> -->
-													<div class="marking-car__parts">
-														//= ../partials/crossover-parts.html
+													<div class="filter__list js-filter-list">
+														<a href="#" class="filter__item active">Справа</a>
+														<a href="#" class="filter__item">Слева</a>
+														<a href="#" class="filter__item">Перед</a>
+														<a href="#" class="filter__item">Зад</a>
+														<a href="#" class="filter__item">Бамперы</a>
+														<a href="#" class="filter__item">Справа</a>
+														<a href="#" class="filter__item">Крыша</a>
+														<a href="#" class="filter__item">Колеса</a>
+														<a href="#" class="filter__item filter__item--more js-filter-more">Все</a>
 													</div>
+												</div>
+											</div>
+
+											<div class="col-3 d-flex justify-content-end">
+												<a data-fancybox data-src="#instruction" href="javascript:;" class="link-icon"><img src="img/ic-info.svg" alt=""><span class="link-icon__text">Инструкция по применению</span></a>
+
+												<div style="display: none;" id="instruction">
+													<div class="h1">Инструкция по применению</div>
+
+													<p>Вы оцените «умный» интерфейс калькулятора кузовного ремонта/покраски автомобиля с первых кликов:</p>
+
+													<ul>
+														<li>Нажмите на тип кузова вашего ТС (хетчбэк, седан, кроссовер и пр.).</li>
+
+														<li>Укажите на интерактивном изображении машины, какие кузовные элементы требуют «оперативного вмешательства» (восстановления или покраски) – они выделятся красным цветом. Для удобства можно использовать таблицу, где перечислены все составляющие от дверей до крыльев.</li>
+
+														<li>Отметьте вид нужных манипуляций в таблице: окраска, замена, монтаж/демонтаж деталей, ремонт и т. п.</li>
+													</ul>
+
+													<p>Все это позволит вам узнать цену за каждый этап ремонта – она в реальном времени будет отражаться в правой части. Когда слагаемых несколько, калькулятор одновременно высчитает общую сумму всех услуг.</p>
+
+													<p>Просим учесть, что результат онлайн расчета (сколько стоит покраска кузова и ремонт) ознакомительный, чтобы клиент автосервиса ABC-SERVICE мог дистанционно определиться со спектром требуемых действий и сэкономить время на визит/звонок к нам.</p>
 												</div>
 											</div>
 										</div>
 									</div>
 
-									<div class="choosen-elem__drawing js-elem-drawing">
-										<!-- <img src="img/models.svg" alt=""> -->
-										//= ../partials/models.html
+									<div class="chosen-result js-chosen-result">
+										<form method="get">
+											<div class="chosen-res-list">
+												<div class="chosen-res-list__item js-chosen-res-item" id="door">
+													<div class="chosen-res-list__head">
+														<div class="chosen-res-list__title">элемент</div>
+														<div class="chosen-res-list__text">Правая задняя дверь</div>
+													</div>
+
+													<div class="chosen-res-list__service-list js-service-list">
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Покраска</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch1" name="param1" checked="checked">
+																<label for="switch1" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">2250</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Ремонт < 50%</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch2" name="param1">
+																<label for="switch2" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">1500</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Ремонт > 50%</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch3" name="param1" checked="checked">
+																<label for="switch3" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">5250</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Замена</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch4" name="param1">
+																<label for="switch4" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">1000</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Установка</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch5" name="param1">
+																<label for="switch5" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">6250</span></span></label>
+															</div>
+														</div>
+													</div>
+
+													<div class="chosen-res-list__sum">
+														<div class="chosen-res-list__title">сумма</div>
+														<div class="chosen-res-list__text">&#8381; <span class="js-sum-elem">0</span></div>
+													</div>
+												</div><!-- end chosen-res-list__item js-chosen-res-item -->
+
+												<div class="chosen-res-list__item js-chosen-res-item" id="threshold">
+													<div class="chosen-res-list__head">
+														<div class="chosen-res-list__title">элемент</div>
+														<div class="chosen-res-list__text">Правый порог</div>
+													</div>
+
+													<div class="chosen-res-list__service-list js-service-list">
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Покраска</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch6" name="param1">
+																<label for="switch6" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">2500</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Ремонт < 50%</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch7" name="param1">
+																<label for="switch7" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">500</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Ремонт > 50%</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch8" name="param1">
+																<label for="switch8" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">4450</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Замена</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch9" name="param1" checked="checked">
+																<label for="switch9" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">9500</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Установка</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch10" name="param1" checked="checked">
+																<label for="switch10" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">1250</span></span></label>
+															</div>
+														</div>
+													</div>
+
+													<div class="chosen-res-list__sum">
+														<div class="chosen-res-list__title">сумма</div>
+														<div class="chosen-res-list__text">&#8381; <span class="js-sum-elem">0</span></div>
+													</div>
+												</div><!-- end chosen-res-list__item js-chosen-res-item -->
+
+												<div class="chosen-res-list__item js-chosen-res-item" id="hood">
+													<div class="chosen-res-list__head">
+														<div class="chosen-res-list__title">элемент</div>
+														<div class="chosen-res-list__text">Правое крыло</div>
+													</div>
+
+													<div class="chosen-res-list__service-list js-service-list">
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Покраска</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch11" name="param1">
+																<label for="switch11" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">250</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Ремонт < 50%</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch12" name="param1">
+																<label for="switch12" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">3500</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Ремонт > 50%</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch13" name="param1">
+																<label for="switch13" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">12250</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Замена</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch14" name="param1">
+																<label for="switch14" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">3000</span></span></label>
+															</div>
+														</div>
+
+														<div class="chosen-res-list__service">
+															<div class="chosen-res-list__title">Установка</div>
+
+															<div class="switch">
+																<input type="checkbox" id="switch15" name="param1">
+																<label for="switch15" class="switch__label js-switch-label"><span class="switch__mark"></span><span class="switch__text">&#8381; <span class="js-sum-service">6250</span></span></label>
+															</div>
+														</div>
+													</div>
+
+													<div class="chosen-res-list__sum">
+														<div class="chosen-res-list__title">сумма</div>
+														<div class="chosen-res-list__text">&#8381; <span class="js-sum-elem">0</span></div>
+													</div>
+												</div><!-- end chosen-res-list__item js-chosen-res-item -->
+											</div><!-- end chosen-res-list__list -->
+
+											<div class="chosen-result__bottom">
+												<div class="chosen-result__btn">
+													<input type="submit" name="Оставить заявку" class="btn">
+
+													<div class="chosen-result__btn-label">Итоговая сумма на калькуляторе является примерной – уточняйте окончательный тариф по тел.: +7 (495) 204-33-43</div>
+												</div>
+
+												<div class="chosen-res-sum">
+													<div class="chosen-res-sum__item">
+														<div class="chosen-res-sum__title">Элементов</div>
+														<div class="chosen-res-sum__num js-count-elem-car">0</div>
+													</div>
+
+													<div class="chosen-res-sum__item">
+														<div class="chosen-res-sum__title">На сумму</div>
+														<div class="chosen-res-sum__num js-all-elem-sum">0</div>
+													</div>
+												</div>
+											</div>
+										</form>
 									</div>
-
-								</div><!-- end choosen-elem -->
-
+								</div>
 							</div>
 						</div>
 					</div>

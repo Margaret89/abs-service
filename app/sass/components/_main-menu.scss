@@ -7,6 +7,10 @@
 		list-style: none;
 	}
 
+	&__item::before{
+		display: none;
+	}
+
 	&__list{
 		display: flex;
 		justify-content: space-between;

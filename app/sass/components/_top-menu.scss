@@ -27,6 +27,10 @@
 		position: relative;
 	}
 
+	&__item::before{
+		display: none;
+	}
+
 	&__item:hover &__link{
 		color: $color-grey;
 	}
