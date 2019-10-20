@@ -1154,8 +1154,10 @@ input[type="submit"].btn--border:hover-white {
 }
 
 .form-site textarea {
-  height: 150px;
+  height: 190px;
   line-height: 1.5;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .form-site input[data-icon="person"],
@@ -2339,4 +2341,94 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
 
 .popular-service__item:hover {
   border-color: #222222;
+}
+
+/*-------------- select-parts -----------------*/
+.select-parts__content {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 100px;
+  padding-bottom: 76px;
+}
+
+.select-parts__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #222222;
+  text-align: center;
+  margin-top: -3px;
+  margin-bottom: 62px;
+}
+
+.select-parts .form-site__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.select-parts .form-site__fields {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 370px);
+  margin: 0 -15px;
+}
+
+.select-parts input[type="text"],
+.select-parts input[type="email"],
+.select-parts textarea {
+  margin: 0 15px 25px;
+  width: calc(33.33% - 30px);
+}
+
+.select-parts input[type="text"].form-site__input-middle,
+.select-parts input[type="email"].form-site__input-middle,
+.select-parts textarea.form-site__input-middle {
+  width: calc(66.66% - 30px);
+}
+
+.select-parts .form-site__input-full {
+  width: 100%;
+}
+
+.select-parts textarea {
+  height: 170px;
+}
+
+.advant-select {
+  width: 330px;
+  background: #f5f5f5;
+}
+
+.advant-select__list {
+  padding: 30px;
+}
+
+.advant-select__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advant-select__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.advant-select__icon {
+  width: 50px;
+}
+
+.advant-select__text {
+  width: calc(100% - 70px);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000;
+}
+
+.advant-select .btn,
+.advant-select input[type="submit"].btn {
+  width: 100%;
+  margin: 0;
 }

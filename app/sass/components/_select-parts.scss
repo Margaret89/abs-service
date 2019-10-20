@@ -1,0 +1,83 @@
+/*-------------- select-parts -----------------*/
+.select-parts{
+	&__content{
+		border-bottom: 1px solid #e5e5e5;
+		margin-bottom: 100px;
+		padding-bottom: 76px;
+	}
+
+	&__text{
+		@include font(normal, 600, 20px, 1.5, $color-text);
+		text-align: center;
+		margin-top: -3px;
+		margin-bottom: 62px;
+	}
+
+	.form-site__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.form-site__fields{
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100% - 370px);
+		margin: 0 -15px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea{
+		margin: 0 15px 25px;
+		width: calc(33.33% - 30px);
+	}
+
+	input[type="text"].form-site__input-middle,
+	input[type="email"].form-site__input-middle,
+	textarea.form-site__input-middle{
+		width: calc(66.66% - 30px);
+	}
+
+	.form-site__input-full{
+		width: 100%;
+	}
+
+	textarea{
+		height: 170px;
+	}
+}
+
+.advant-select{
+	width: 330px;
+	background: #f5f5f5;
+
+	&__list{
+		padding: 30px;
+	}
+
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 30px;
+	}
+
+	&__icon{
+		width: 50px;
+	}
+
+	&__text{
+		width: calc(100% - 70px);
+		@include font(normal, normal, 16px, 1.25, #000);
+	}
+
+	.btn,
+	input[type="submit"].btn{
+		width: 100%;
+		margin: 0;
+	}
+}
