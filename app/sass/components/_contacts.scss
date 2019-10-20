@@ -1,0 +1,31 @@
+/*-------------- contacts- -----------------*/
+.contacts{
+	margin-top: 50px;
+
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__icon{
+		width: 50px;
+	}
+
+	&__content{
+		width: calc(100% - 70px);
+	}
+
+	&__title{
+		@include font(normal, 600, 16px, 1.2, #000);
+	}
+
+	&__text{
+		@include font(normal, normal, 16px, 1.2, #a4a4a4);
+		margin-top: 3px;
+	}
+
+	.btn{
+		width: 100%;
+	}
+}

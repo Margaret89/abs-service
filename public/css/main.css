@@ -2772,3 +2772,91 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
 .share__item--tw:hover {
   background: #00aced;
 }
+
+/*-------------- contacts- -----------------*/
+.contacts {
+  margin-top: 50px;
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__icon {
+  width: 50px;
+}
+
+.contacts__content {
+  width: calc(100% - 70px);
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.contacts__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #a4a4a4;
+  margin-top: 3px;
+}
+
+.contacts .btn {
+  width: 100%;
+}
+
+/*-------------- map -----------------*/
+.map-wrap {
+  margin-top: 90px;
+  position: relative;
+}
+
+.map-wrap::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 280px;
+  background: #222222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.map-wrap::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #222222;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.map {
+  width: 100%;
+  height: 560px;
+}
+
+.map .ymaps-2-1-74-ground-pane {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@media (max-width: 767px) {
+  .map {
+    height: 300px;
+  }
+}

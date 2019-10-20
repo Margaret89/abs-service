@@ -332,4 +332,28 @@ if ($('.js-elem-car').length) {
 			]
 		});
 	}
+
+// Yandex карта
+	if ($('#map').length) {
+		// Иницилизация карты
+		ymaps.ready(init);
+
+		function init(){
+			var myMap;
+
+			myMap = new ymaps.Map("map", {
+				center: [55.597, 37.51],
+				zoom: 16,
+				controls: []
+			});
+
+			var myPlacemark = new ymaps.Placemark([55.597011, 37.511862] , {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/mark-map.png',
+				iconImageSize: [52, 70],
+				iconImageOffset: [-29, -60] });
+
+				myMap.geoObjects.add(myPlacemark);
+		}
+	}
 });
