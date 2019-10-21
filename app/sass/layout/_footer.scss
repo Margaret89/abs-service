@@ -45,3 +45,42 @@
 		@include font(normal, normal, 16px, 1.5, #909090);
 	}
 }
+
+@media (max-width: 991px) {
+	.footer-contacts{
+		&__item{
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: 40px;
+		}
+
+		&__item:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.footer{
+		&__top{
+			padding: 50px 0;
+		}
+	}
+
+	.footer-contacts{
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 574px) {
+	.footer{
+		&__bottom-content{
+			flex-direction: column;
+		}
+
+		&__copyright-wrap{
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+}

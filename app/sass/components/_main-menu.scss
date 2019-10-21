@@ -7,6 +7,18 @@
 		list-style: none;
 	}
 
+	&__list{
+		overflow: hidden;
+	}
+
+	&__list.is-visible{
+		overflow: visible;
+	}
+
+	&__item.no-active{
+		display: none;
+	}
+
 	&__item::before{
 		display: none;
 	}
@@ -21,7 +33,9 @@
 		@include font(normal, 600, 14px, 1.2, $color-text);
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 28px 37px 31px;
+		padding: 28px 35px 31px;
+		white-space: nowrap;
+		cursor: pointer;
 	}
 
 	&__link.current{
@@ -50,17 +64,20 @@
 	}
 
 	&__sub,
-	&__sub-item{
+	&__sub-item,
+	&__more{
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
 
-	&__sub-item::before{
+	&__sub-item::before,
+	&__more-item::before{
 		display: none;
 	}
 
-	&__sub{
+	&__sub,
+	&__more{
 		display: none;
 		width: 400px;
 		padding: 20px 40px;
@@ -72,22 +89,216 @@
 		z-index: 10;
 	}
 
+	&__more{
+		left: auto;
+		right: 0;
+		width: 230px;
+		padding: 20px 0;
+	}
+
 	&__sub-item{
 		padding: 5px 0 6px;
 	}
 
-	&__sub-link{
+	&__more-item{
+		padding: 5px 40px 6px;
+	}
+
+	&__sub-link,
+	&__more-item a{
 		display: inline-block;
 		@include font(normal, 600, 14px, 1.2, $color-text);
 		text-transform: uppercase;
 		text-decoration: none;
 	}
 
-	&__sub-link:hover{
+	&__more-item a{
+		padding: 0;
+		white-space: normal;
+	}
+
+	&__sub-link:hover,
+	&__more-item a:hover{
 		color: $color-red-light;
 	}
 
-	&__item:hover &__sub{
+	&__item:hover &__sub,
+	&__item:hover &__more{
 		display: block;
+	}
+
+	&__more &__arr{
+		position: absolute;
+		@include top-center;
+		left: 0;
+		transform: rotate(90deg);
+		margin-top: -3px;
+	}
+
+	&__item:hover &__more &__sub{
+		display: none;
+	}
+
+	&__more &__sub{
+		left: auto;
+		right: 100%;
+		top: 0;
+	}
+
+	&__more &__more-item:hover &__sub{
+		display: block;
+	}
+}
+
+@media (max-width: 1229px) {
+	.main-menu{
+		&__link{
+			padding: 28px 20px 31px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.mobile-menu{
+		position: fixed;
+		top: 0;
+		right: -100%;
+		height: 100%;
+		width: 550px;
+		background: #fff;
+		z-index: 100;
+		overflow-y: auto;
+		overflow-x: hidden;
+		transition: right 0.3s ease;
+
+		&.open{
+			right: 0;
+		}
+
+		&__head{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 17px 15px 17px 20px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		&__title{
+			@include font(normal, 500, 15px, 1.15, $color-text);
+		}
+
+		&__title.active{
+			cursor: pointer;
+		}
+
+		&__content{
+			transform: translateX(0);
+			transition: all 0.5s ease 0s;
+			display: block;
+		}
+
+		.main-menu{
+			width: 100%;
+		}
+
+		.main-menu__list,
+		.top-menu__list{
+			display: block;
+		}
+
+		.main-menu__item{
+			position: relative;
+		}
+
+		.main-menu li a,
+		.main-menu a,
+		.top-menu__link{
+			display: block;
+			padding: 10px 35px 11px 20px;
+		}
+
+		.main-menu__arr{
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			background: url(#{$path-icon}/ic-arr-mobmenu.svg) no-repeat center;
+			position: absolute;
+			top: 13px;
+			right: 15px;
+		}
+
+		.main-menu__list li{
+			position: static;
+		}
+
+		.main-menu__list ul{
+			position: absolute;
+			top: 0;
+			left: 100%;
+			width: 550px;
+		}
+
+		.main-menu__sub{
+			display: block;
+			padding: 0;
+			box-shadow: none;
+			visibility: hidden;
+			transition: visibility 0.5s ease 0s;
+			border: 0;
+		}
+
+		.main-menu__sub.active{
+			visibility: visible;
+		}
+
+		&__sub-item{
+			padding: 0;
+		}
+
+		.main-menu__link{
+			position: relative;
+		}
+
+		.top-menu__link,
+		.top-menu__link{
+			@include font(normal, 600, 14px, 1.2, $color-text);
+		}
+
+		.top-menu__item--color{
+			background: transparent;
+			color: $color-text
+		}
+
+		.top-menu__link:hover,
+		.top-menu__item--color:hover{
+			color: $color-red;
+		}
+
+		.top-menu__item--color .top-menu__text::before{
+			display: none;
+		}
+
+		.header__address{
+			font-weight: 600;
+			color: $color-text;
+			text-transform: none;
+			border-top: 1px solid #e5e5e5;
+			padding: 30px 15px 15px;
+			margin-top: 20px;
+		}
+
+		.header__contacts{
+			padding: 10px 15px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.mobile-menu{
+		width: 280px;
+
+		.main-menu ul{
+			width: 280px;
+		}
 	}
 }

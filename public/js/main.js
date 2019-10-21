@@ -378,4 +378,138 @@ if ($('.js-elem-car').length) {
 				myMap.geoObjects.add(myPlacemark);
 		}
 	}
+
+// Добавление пункта "Еще" в меню
+	var windowWidth = $(window).width();
+	var moreMenu = false;
+
+	addItemMenu();
+
+	$('.js-main-menu').addClass('is-visible');
+
+	$(window).resize(function(){
+		windowWidth = $(window).width();
+		addItemMenu();
+	});
+
+	function addItemMenu() {
+		
+
+		if ((windowWidth >767) && (windowWidth <1860)) {
+			var moreItemMenu = 100;
+			var menuWidth = $('.js-main-menu').width() - moreItemMenu;
+			var sumItemMenu = 0;
+			var arrWidthMenu = [];
+
+			$('.js-main-menu-item').each(function(index){
+				var itemWidth = $(this).outerWidth();
+				arrWidthMenu.push($(this).outerWidth());
+			});
+
+			for (var i = 0; i < arrWidthMenu.length; i++) {
+				var $curItem = $('.js-main-menu-item[data-item='+ i +']');
+				sumItemMenu = sumItemMenu + arrWidthMenu[i];
+
+				// Добавляем пункт Еще и его подпункты
+				if(sumItemMenu > menuWidth){
+					$curItem.addClass('no-active');
+
+					if (moreMenu == false) {
+						$('.js-main-menu').append('<li class="main-menu__item js-menu-more"><span class="main-menu__link">Еще</span><ul class="main-menu__more js-menu-more-sub"></ul></li>');
+						moreMenu = true;
+					}
+
+					if (!$('.main-menu__more-item[data-item='+i+']').length) {
+						$('.main-menu__more-item').attr('data-item')
+						var $clone = $curItem.clone().appendTo(".js-menu-more-sub");
+						$clone.removeClass('main-menu__item js-main-menu-item no-active');
+						$clone.addClass('main-menu__more-item js-menu-more-item');
+					}
+				}else{
+					$curItem.removeClass('no-active');
+					$('.main-menu__more-item[data-item='+i+']').remove();
+				}
+			}
+
+			// Удаляем пункт Еще, если все пункты вмещаются
+			if ($('.js-menu-more-item').length == 0) {
+				$('.js-menu-more').remove();
+				moreMenu = false;
+			}
+		}else{
+			if ($('.js-menu-more').length) {
+				$('.js-main-menu-item').removeClass('no-active');
+				$('.js-menu-more').remove();
+				moreMenu = false;
+			}
+		}
+	}
+
+// Создание мобильного меню
+	var arrMobileMenu = [];
+	$('.js-add-mm').each(function(){
+		var indexItem = $(this).attr('data-order');
+		arrMobileMenu[indexItem] = $(this);
+	});
+
+	for (var i = 0; i < arrMobileMenu.length; i++) {
+		$(arrMobileMenu[i]).clone().appendTo('.js-mobile-menu-content');
+	}
+
+// Открыть/Закрыть мобильное меню
+	$('.js-open-menu').click(function(){
+		$('.js-shadow').addClass('is-visible');
+		$('.js-mobile-menu').addClass('open');
+		$('.js-body').addClass('no-scroll');
+	});
+
+	$('.js-close-menu').click(function(){
+		 closeCatMenu();
+	});
+
+	$('.js-shadow').click(function(){
+		closeCatMenu();
+	});
+
+	function closeCatMenu() {
+		$('.js-shadow').removeClass('is-visible');
+		$('.js-mobile-menu').removeClass('open');
+		$('.js-body').removeClass('no-scroll');
+	}
+
+// Перемещение мобильного меню
+	var indentMenu = 0;
+	var levelMenu = 0;
+	var titleMobileMenu = $('.js-menu-back').text();
+
+	$('.js-main-menu-arr').on("click", function(event){
+		event.preventDefault();
+		var $curItem = $(this).parent('.js-main-menu-link');
+		var curItemText = $(this).siblings('.js-main-menu-text').text();
+		var $subMenu = $curItem.siblings('.js-main-menu-sub');
+		indentMenu = indentMenu - 100;
+		levelMenu++;
+
+		$subMenu.addClass('active');
+		$('.js-menu-back').addClass('active');
+		$('.js-menu-back').text(curItemText);
+
+		$('.js-mobile-menu-content').css('transform','translateX('+indentMenu+'%)');
+	});
+
+	$('.js-menu-back').on("click", function(event){
+		if ($(this).hasClass('active')) {
+			indentMenu = indentMenu + 100;
+			levelMenu--;
+
+			if (levelMenu == 0) {
+				$('.js-menu-back').text(titleMobileMenu);
+				$('.js-menu-back').removeClass('active');
+			}
+
+			$('.js-main-menu-sub').removeClass('active');
+
+			$('.js-mobile-menu-content').css('transform','translateX('+indentMenu+'%)');
+		}
+	});
 });

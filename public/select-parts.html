@@ -7,6 +7,7 @@
 		<title>Подбор запчастей</title>
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="css/hamburger.css">
 		<link rel="stylesheet" href="js/vendor/slick/slick.css">
 		<link rel="stylesheet" href="js/vendor/readmore-symbols/readmore-symbols.css">
 		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
@@ -14,8 +15,10 @@
 	
 		<script src="js/jquery-3.4.1.min.js"></script>
 	</head>
-	<body>
+	<body class="js-body">
 		<div class="wrapper">
+			<div class="shadow-site d-md-none js-shadow"></div>
+			
 			<header class="header">
 				<div class="header__logo-wrap">
 					<a href="/"><img src="img/logo.svg" alt="" class="header__logo"></a>
@@ -23,9 +26,9 @@
 			
 				<div class="header__content">
 					<div class="header__top">
-						<div class="header__address">г. Москва, МКАД 38км, 6БС1</div>
+						<div class="header__address js-add-mm" data-order="3">г. Москва, МКАД 38км, 6БС1</div>
 			
-						<nav class="top-menu">
+						<nav class="top-menu js-add-mm" data-order="2">
 							<ul class="top-menu__list">
 								<li class="top-menu__item">
 									<a href="#" class="top-menu__link"><span class="top-menu__text">О нас</span></a>
@@ -37,16 +40,16 @@
 					</div>
 			
 					<div class="header__bottom">
-						<nav class="main-menu">
-							<ul class="main-menu__list">
-								<li class="main-menu__item"><a href="#" class="main-menu__link current">Акции</a></li>
+						<nav class="main-menu js-add-mm" data-order="1">
+							<ul class="main-menu__list js-main-menu">
+								<li class="main-menu__item js-main-menu-item" data-item="0"><a href="#" class="main-menu__link js-main-menu-link current"><span class="js-main-menu-text">Акции</span></a></li>
 			
-								<li class="main-menu__item">
-									<a href="#" class="main-menu__link">Техническое обслуживание
-										<span class="main-menu__arr"></span>
+								<li class="main-menu__item js-main-menu-item" data-item="1">
+									<a href="#" class="main-menu__link js-main-menu-link"><span class="js-main-menu-text">Техническое обслуживание</span>
+										<span class="main-menu__arr js-main-menu-arr"></span>
 									</a>
 			
-									<ul class="main-menu__sub">
+									<ul class="main-menu__sub js-main-menu-sub">
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена масла в двигателе</a></li>
 			
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Замена масла в КПП (Полная/частичная)</a></li>
@@ -67,12 +70,12 @@
 									</ul>
 								</li>
 			
-								<li class="main-menu__item">
-									<a href="#" class="main-menu__link">Слесарный ремонт
-										<span class="main-menu__arr"></span>
+								<li class="main-menu__item js-main-menu-item" data-item="2">
+									<a href="#" class="main-menu__link js-main-menu-link"><span class="js-main-menu-text">Слесарный ремонт</span>
+										<span class="main-menu__arr js-main-menu-arr"></span>
 									</a>
 			
-									<ul class="main-menu__sub">
+									<ul class="main-menu__sub js-main-menu-sub">
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт подвески</a></li>
 			
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт рулевого управления</a></li>
@@ -91,12 +94,12 @@
 									</ul>
 								</li>
 			
-								<li class="main-menu__item">
-									<a href="#" class="main-menu__link">Кузовной ремонт
-										<span class="main-menu__arr"></span>
+								<li class="main-menu__item js-main-menu-item" data-item="3">
+									<a href="#" class="main-menu__link js-main-menu-link"><span class="js-main-menu-text">Кузовной ремонт</span>
+										<span class="main-menu__arr js-main-menu-arr"></span>
 									</a>
 			
-									<ul class="main-menu__sub">
+									<ul class="main-menu__sub js-main-menu-sub">
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт сколов</a></li>
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Ремонт/замена стекол</a></li>
 										<li class="main-menu__sub-item"><a href="#" class="main-menu__sub-link">Удаление царапин и вмятин</a></li>
@@ -110,19 +113,30 @@
 									</ul>
 								</li>
 			
-								<li class="main-menu__item"><a href="#" class="main-menu__link">Утилизация</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="4"><a href="#" class="main-menu__link js-main-menu-link"><span class="js-main-menu-text">Утилизация</span></a></li>
 			
-								<li class="main-menu__item"><a href="#" class="main-menu__link">Заказ запчастей</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="5"><a href="#" class="main-menu__link js-main-menu-link"><span class="js-main-menu-text">Заказ запчастей</span></a></li>
 			
-								<li class="main-menu__item"><a href="#" class="main-menu__link">Доп. услуги</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="6"><a href="#" class="main-menu__link js-main-menu-link"><span class="js-main-menu-text">Доп. услуги</span></a></li>
 							</ul>
 						</nav><!-- end main-menu -->
 			
-						<div class="header__contacts">
+						<div class="header__contacts js-add-mm" data-order="4">
 							<a href="tel:+78002004458" class="header__phone">8 (800) 200-44-58</a>
 							<a href="tel:+74952043343" class="header__phone">+7 (495) 204-33-43</a>
 						</div>
+			
+						<span class="ic-hamburger js-open-menu d-md-none"><span></span></span>
 					</div>
+				</div>
+			
+				<div class="mobile-menu js-mobile-menu d-md-none">
+					<div class="mobile-menu__head">
+						<div class="mobile-menu__title js-menu-back">Меню</div>
+						<span class="ic-hamburger active js-close-menu"><span></span></span>
+					</div>
+			
+					<div class="mobile-menu__content js-mobile-menu-content"></div>
 				</div>
 			</header>
 			<main>
@@ -220,7 +234,7 @@
 				<div class="footer__top">
 					<div class="container">
 						<div class="row">
-							<div class="col-6">
+							<div class="col-md-6">
 								<nav class="footer-menu">
 									<ul class="footer-menu__list">
 										<li class="footer-menu__item"><a href="#" class="footer-menu__link">Техническое обслуживание</a></li>
@@ -238,7 +252,7 @@
 								</nav>
 							</div>
 			
-							<div class="col-6">
+							<div class="col-md-6">
 								<div class="footer-contacts">
 									<div class="footer-contacts__item">
 										<div class="footer-contacts__icon"><img src="img/ic-map.svg" alt=""></div>
