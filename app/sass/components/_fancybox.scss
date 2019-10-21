@@ -8,3 +8,11 @@
 .fancybox-content{
 	width: 1170px;
 }
+
+@media (max-width: 767px) {
+	.fancybox-slide--html .fancybox-close-small{
+		padding: 5px;
+		right: 5px;
+		top: 5px;
+	}
+}

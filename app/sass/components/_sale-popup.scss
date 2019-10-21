@@ -29,6 +29,7 @@
 
 	.form-site__fields{
 		display: block;
+		margin-top: 0;
 	}
 
 	.form-site input[type="text"],
@@ -55,5 +56,63 @@
 
 	.syotimer-cell__unit{
 		margin-bottom: -3px;
+	}
+}
+
+@media (max-width: 1229px) {
+	.sale-popup{
+		padding: 70px 30px;
+
+		.btn,
+		input[type="submit"].btn{
+			min-width: 100px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.sale-popup{
+		&__img{
+			display: none;
+		}
+
+		&__desc{
+			width: 60%;
+		}
+
+		 .form-site{
+			width: 40%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.sale-popup{
+		padding: 40px 15px;
+
+		&__content{
+			display: block;
+		}
+
+		&__desc,
+		.form-site{
+			padding: 0;
+			width: 100%;
+		}
+
+		&__head{
+			font-size: 35px;
+			text-align: center;
+		}
+
+		.syotimer__body{
+			justify-content: center;
+			margin-bottom: 40px;
+		}
+
+		.form-site input[type="text"],
+		.form-site input[type="email"]{
+			margin-bottom: 10px;
+		}
 	}
 }

@@ -16,3 +16,11 @@
 		}
 	}
 }
+
+@media (max-width: 574px) {
+	.brand{
+		&__item{
+			margin-bottom: 40px;
+		}
+	}
+}

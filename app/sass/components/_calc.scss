@@ -98,6 +98,17 @@
 		@include font(normal, 600, 20px, 1.2, #000);
 		margin-bottom: 65px;
 	}
+
+	.form-site input[type="text"],
+	.form-site input[type="email"],
+	.form-site textarea{
+		width: calc(25% - 30px);
+	}
+
+	.btn,
+	input[type="submit"].btn{
+		min-width: 210px;
+	}
 }
 
 .steps-param{
@@ -118,5 +129,74 @@
 
 	&__item:hover{
 		border-color: $color-text;
+	}
+}
+
+@media (max-width: 991px) {
+	.steps-param{
+		&__item{
+			font-size: 14px;
+		}
+	}
+
+	.steps{
+		&__current{
+			width: 30px;
+			height: 30px;
+			line-height: 28px;
+		}
+
+		&__item{
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	.steps-tab{
+		.form-site input[type="text"],
+		.form-site input[type="email"],
+		.form-site textarea{
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.calc{
+		&__text{
+			font-size: 18px;
+		}
+	}
+
+	.steps-tab{
+		&__head{
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.steps-param{
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 574px) {
+	.steps-param{
+		&__item{
+			min-height: 40px;
+			height: auto;
+			line-height: 1.2;
+			margin: 0 10px 10px 0;
+			padding: 10px 15px;
+		}
+	}
+
+	.steps-tab{
+		.form-site input[type="text"],
+		.form-site input[type="email"],
+		.form-site textarea{
+			margin: 0 0 10px 0;
+			width: 100%;
+		}
 	}
 }

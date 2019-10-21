@@ -73,3 +73,17 @@
 		opacity: 0;
 	}
 }
+
+@media (max-width: 991px) {
+	.partner-wrap{
+		padding-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.partner-slider{
+		padding: 0 30px;
+
+		.slick-prev{left: 0;}
+		.slick-next{right: 0;}
+	}
+}

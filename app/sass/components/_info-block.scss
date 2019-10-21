@@ -84,3 +84,32 @@
 		background: #fff;
 	}
 }
+
+@media (max-width: 991px) {
+	.info-block{
+		&__content::before{
+			left: 5px;
+		}
+		
+		.b-readmore{
+			left: -10px;
+		}
+
+		.b-readmore__toggle{
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.info-block{
+		margin-top: 0;
+		margin-bottom: 60px;
+
+		&__title,
+		&__subtitle{
+			font-size: 35px;
+		}
+	}
+}

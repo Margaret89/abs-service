@@ -36,3 +36,32 @@
 		text-align: center;
 	}
 }
+
+@media (max-width: 767px) {
+	.countdown-wrap{
+		&__title{
+			font-size: 18px;
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+
+	.syotimer-cell{
+		&__value,
+		&:not(:last-child):after{
+			font-size: 40px;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.syotimer-cell{
+		&:not(:last-child){
+			margin-right: 25px;
+		}
+
+		&:not(:last-child):after{
+			right: -18px;
+		}
+	}
+}

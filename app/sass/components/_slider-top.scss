@@ -108,6 +108,10 @@
 		list-style: none;
 	}
 
+	.slick-dots li::before{
+		display: none;
+	}
+
 	.slick-dots{
 		display: flex;
 		justify-content: center;
@@ -136,5 +140,103 @@
 	.slick-dots button:hover{
 		width: 60px;
 		opacity: 1;
+	}
+}
+
+@media (max-width: 1299px) {
+	.slider-top{
+		&__price,
+		&__head{
+			font-size: 50px;
+		}
+
+		&__text{
+			font-size: 20px;
+		}
+
+		&__desc,
+		&__price{
+			padding: 50px 30px;
+			max-width: 50%;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.slider-top{
+		&__content{
+			position: relative;
+			align-items: flex-end;
+		}
+
+		&__desc{
+			position: absolute;
+			bottom: 165px;
+			left: 0;
+		}
+
+		&__price{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		&__desc,
+		&__price{
+			max-width: 80%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.slider-top{
+		&__item{
+			height: 405px;
+		}
+
+		.slick-dots{
+			bottom: 20px;
+		}
+
+		.slick-dots button{
+			width: 25px;
+		}
+
+		.slick-dots .slick-active button,
+		.slick-dots button:hover{
+			width: 40px;
+		}
+
+		&__content{
+			display: block;
+			margin-bottom: 60px;
+		}
+
+		&__item::after{
+			display: none;
+		}
+
+		&__desc,
+		&__price{
+			position: static;
+			max-width: 100%;
+			width: 100%;
+			background: rgba(34,34,34,0.7);
+			padding: 15px;
+		}
+
+		.slick-slide &__bg-left,
+		.slick-slide &__bg-right{
+			display: none;
+		}
+
+		&__price,
+		&__head{
+			font-size: 35px;
+		}
+
+		&__text{
+			font-size: 16px;
+		}
 	}
 }

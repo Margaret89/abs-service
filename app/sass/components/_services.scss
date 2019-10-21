@@ -63,3 +63,28 @@
 		display: block;
 	}
 }
+
+@media (max-width: 767px) {
+	.services{
+		&__item{
+			display: flex;
+			margin-bottom: 10px;
+			border: 1px solid #e5e5e5;
+			padding: 7px 10px;
+			border-radius: 2px;
+		}
+
+		&__list--right{
+			text-align: left;
+		}
+
+		&__list--right &__item{
+			flex-direction: row;
+		}
+
+		&__list--right &__icon{
+			margin-right: 20px;
+			margin-left: 0;
+		}
+	}
+}

@@ -18,6 +18,30 @@ $(document).ready(function () {
 			slidesToScroll: 4,
 			dots: false,
 			arrows: true,
+			responsive: [
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 479,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+
+				{
+					breakpoint: 360,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				},
+			]
 		});
 	}
 
