@@ -76,3 +76,11 @@
 		justify-content: center;
 	}
 }
+
+@media (max-width: 767px) {
+	.tabs-page{
+		&__item{
+			padding: 17px 25px;
+		}
+	}
+}

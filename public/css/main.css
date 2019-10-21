@@ -1735,6 +1735,9 @@ input[type="submit"].btn--border-white:hover {
   .form-site__text {
     margin-bottom: 40px;
   }
+  .form-site__col {
+    width: 100%;
+  }
 }
 
 /*-------------- advant -----------------*/
@@ -2327,6 +2330,9 @@ input[type="submit"].btn--border-white:hover {
     right: 5px;
     top: 5px;
   }
+  .fancybox-content {
+    padding: 40px 15px;
+  }
 }
 
 /*-------------- tabs-page -----------------*/
@@ -2422,6 +2428,12 @@ input[type="submit"].btn--border-white:hover {
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .tabs-page__item {
+    padding: 17px 25px;
+  }
 }
 
 /*-------------- body-repiar -----------------*/
@@ -2802,6 +2814,26 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
   text-overflow: ellipsis;
   width: calc(100% - 270px);
   overflow: hidden;
+}
+
+@media (max-width: 574px) {
+  .file-upload {
+    margin-bottom: 10px;
+  }
+  .file-upload .btn {
+    width: 240px;
+    margin-right: 0;
+  }
+  .file-upload__content {
+    display: block;
+    white-space: normal;
+  }
+  .file-upload__name {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 3px;
+  }
 }
 
 /*-------------- work-slider -----------------*/

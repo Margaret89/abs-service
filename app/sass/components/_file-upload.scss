@@ -27,3 +27,26 @@
 		overflow: hidden;
 	}
 }
+
+@media (max-width: 574px) {
+	.file-upload{
+		margin-bottom: 10px;
+
+		.btn{
+			width: 240px;
+			margin-right: 0;
+		}
+
+		&__content{
+			display: block;
+			white-space: normal;
+		}
+
+		&__name{
+			display: block;
+			width: 100%;
+			line-height: 1.5;
+			margin-top: 3px;
+		}
+	}
+}
