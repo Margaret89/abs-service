@@ -100,3 +100,42 @@
 		background: $color-red-light;
 	}
 }
+
+@media (max-width: 991px) {
+	.sale-list{
+		&__item--big{
+			min-height: 460px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.sale-list{
+		&__content{
+			padding: 30px 20px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.sale-list{
+		&__item{
+			min-height: auto;
+		}
+
+		&__item--big{
+			text-align: left;
+		}
+
+		&__name,
+		&__item--big &__name{
+			font-size: 24px;
+		}
+
+		&__date,
+		&__item--big &__date{
+			font-size: 16px;
+			margin-bottom: 42px;
+		}
+	}
+}

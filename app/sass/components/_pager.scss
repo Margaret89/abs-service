@@ -36,3 +36,11 @@
 		margin-right: 15px;
 	}
 }
+
+@media (max-width: 767px) {
+	.pager{
+		&__item:not(:last-child){
+			margin-right: 10px;
+		}
+	}
+}

@@ -951,7 +951,7 @@ input[type="submit"].btn--border-white:hover {
   color: #909090;
 }
 
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   .footer-menu__list {
     -moz-column-count: 1;
          column-count: 1;
@@ -1505,7 +1505,7 @@ input[type="submit"].btn--border-white:hover {
   }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   .steps-param__item {
     min-height: 40px;
     height: auto;
@@ -1534,7 +1534,7 @@ input[type="submit"].btn--border-white:hover {
   opacity: 1;
 }
 
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   .brand__item {
     margin-bottom: 40px;
   }
@@ -1597,7 +1597,7 @@ input[type="submit"].btn--border-white:hover {
   }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   .model__item {
     width: 100%;
   }
@@ -2465,7 +2465,7 @@ input[type="submit"].btn--border-white:hover {
   }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   .tabs-page__content-item {
     min-height: 300px;
   }
@@ -2933,7 +2933,7 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
   overflow: hidden;
 }
 
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   .file-upload {
     margin-bottom: 10px;
   }
@@ -3490,6 +3490,36 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
   background: #EF3939;
 }
 
+@media (max-width: 991px) {
+  .sale-list__item--big {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sale-list__content {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sale-list__item {
+    min-height: auto;
+  }
+  .sale-list__item--big {
+    text-align: left;
+  }
+  .sale-list__name,
+  .sale-list__item--big .sale-list__name {
+    font-size: 24px;
+  }
+  .sale-list__date,
+  .sale-list__item--big .sale-list__date {
+    font-size: 16px;
+    margin-bottom: 42px;
+  }
+}
+
 /*-------------- subscribe -----------------*/
 .subscribe-wrap {
   margin: 62px 0 92px;
@@ -3543,6 +3573,18 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
   min-width: 180px;
 }
 
+@media (max-width: 991px) {
+  .subscribe-wrap__head {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe-wrap {
+    margin: 30px 0 60px;
+  }
+}
+
 /*----------- pager -------------*/
 .pager {
   display: flex;
@@ -3584,6 +3626,12 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
 
 .pager__item:not(:last-child) {
   margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .pager__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 /*-------------- sale-detail -----------------*/
