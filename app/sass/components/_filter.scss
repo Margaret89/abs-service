@@ -6,6 +6,7 @@
 	.link-icon{
 		display: inline-block;
 		padding: 20px 0;
+		text-align: right;
 	}
 }
 
@@ -53,4 +54,23 @@
 
 	&__item:hover{border-color: $color-text;}
 	&__item.active:hover{border-color: $color-red;}
+}
+
+@media (max-width: 767px) {
+	.filter{
+		display: block;
+
+		&__title{
+			padding: 10px 0;
+		}
+
+		&__list{
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+
+		&__item{
+			margin: 5px;
+		}
+	}
 }

@@ -18,3 +18,23 @@
 		margin: 0;
 	}
 }
+
+@media (max-width: 991px) {
+	.repair-estimate{
+		padding: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.repair-estimate{
+		display: block;
+		margin-bottom: 60px;
+
+		.h1,
+		h1{
+			max-width: 100%;
+			padding-right: 0;
+			margin-bottom: 15px;
+		}
+	}
+}

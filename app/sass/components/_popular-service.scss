@@ -38,3 +38,38 @@
 		border-color: $color-text;
 	}
 }
+
+@media (max-width: 991px) {
+	.popular-service{
+		&__content{
+			display: block;
+		}
+
+		&__head,
+		&__list{
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.popular-service{
+		margin-top: 60px;
+		
+		&__head{
+			font-size: 30px;
+		}
+
+		&__item{
+			height: auto;
+			min-height: 45px;
+			line-height: 1.2;
+			padding: 10px 15px;
+			margin: 0 10px 10px 0;
+		}
+
+		&__content{
+			padding-top: 60px;
+		}
+	}
+}
