@@ -173,6 +173,13 @@
 			font-size: 18px;
 			margin-bottom: 40px;
 		}
+
+		.form-site input[type="text"],
+		.form-site input[type="email"],
+		.form-site textarea{
+			margin: 0 0 10px 0;
+			width: 100%;
+		}
 	}
 
 	.steps-param{
@@ -188,15 +195,6 @@
 			line-height: 1.2;
 			margin: 0 10px 10px 0;
 			padding: 10px 15px;
-		}
-	}
-
-	.steps-tab{
-		.form-site input[type="text"],
-		.form-site input[type="email"],
-		.form-site textarea{
-			margin: 0 0 10px 0;
-			width: 100%;
 		}
 	}
 }
