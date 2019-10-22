@@ -40,6 +40,12 @@
 }
 
 @media (max-width: 767px) {
+	.map-wrap{
+		&::before{
+			height: 140px;
+		}
+	}
+	
 	.map{
 		height: 300px;
 	}

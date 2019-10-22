@@ -27,5 +27,28 @@
 
 	.btn{
 		width: 100%;
+		min-width: auto;
+	}
+}
+
+@media (max-width: 991px) {
+	.contacts{
+		.btn{
+			display: block;
+			width: 250px;
+			margin: 20px auto 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.contacts{
+		&__item{
+			margin-bottom: 20px;
+		}
+
+		.btn{
+			margin-left: 0;
+		}
 	}
 }
