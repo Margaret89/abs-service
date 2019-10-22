@@ -31,3 +31,22 @@
 	&__item--fb:hover{background: #3f5b9c;}
 	&__item--tw:hover{background: #00aced;}
 }
+
+@media (max-width: 575px) {
+	.share{
+		display: block;
+
+		&__label{
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		&__item{
+			margin: 5px 10px 5px 0;
+		}
+
+		&__item:not(:last-child){
+			margin-right: 10px;
+		}
+	}
+}

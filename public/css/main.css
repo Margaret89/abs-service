@@ -3696,6 +3696,25 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
   padding-top: 93px;
 }
 
+@media (max-width: 767px) {
+  .sale-detail__share {
+    display: block;
+  }
+  .sale-detail .btn {
+    margin-top: 20px;
+  }
+  .sale-detail__head {
+    font-size: 30px;
+  }
+  .other-sale h1,
+  .other-sale .h1 {
+    font-size: 26px;
+    margin-top: 60px;
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+}
+
 /*-------------- notice -----------------*/
 .notice {
   padding: 28px 37px 36px;
@@ -3757,6 +3776,22 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
 
 .share__item--tw:hover {
   background: #00aced;
+}
+
+@media (max-width: 575px) {
+  .share {
+    display: block;
+  }
+  .share__label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .share__item {
+    margin: 5px 10px 5px 0;
+  }
+  .share__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 /*-------------- contacts- -----------------*/

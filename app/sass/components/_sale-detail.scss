@@ -55,3 +55,29 @@
 		padding-top: 93px;
 	}
 }
+
+@media (max-width: 767px) {
+	.sale-detail{
+		&__share{
+			display: block;
+		}
+
+		.btn{
+			margin-top: 20px;
+		}
+
+		&__head{
+			font-size: 30px;
+		}
+	}
+
+	.other-sale{
+		h1,
+		.h1{
+			font-size: 26px;
+			margin-top: 60px;
+			padding-top: 60px;
+			margin-bottom: 0;
+		}
+	}
+}
