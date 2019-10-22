@@ -3344,6 +3344,42 @@ input[type=checkbox]:checked + .switch__label .switch__mark::after {
   margin: 0;
 }
 
+@media (max-width: 1229px) {
+  .select-parts .form-site__fields {
+    width: calc(100% - 340px);
+  }
+}
+
+@media (max-width: 991px) {
+  .select-parts .form-site__content {
+    display: block;
+  }
+  .select-parts .form-site__fields {
+    width: auto;
+  }
+  .advant-select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .select-parts .form-site__fields {
+    margin: 0;
+  }
+  .select-parts input[type="text"],
+  .select-parts input[type="email"],
+  .select-parts textarea,
+  .select-parts input[type="text"].form-site__input-middle,
+  .select-parts input[type="email"].form-site__input-middle,
+  .select-parts textarea.form-site__input-middle {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .select-parts__content {
+    margin-bottom: 50px;
+  }
+}
+
 /*-------------- sale -----------------*/
 .sale-list {
   margin-top: 27px;
