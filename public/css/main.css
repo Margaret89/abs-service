@@ -373,6 +373,12 @@ input[type="submit"].btn--border-white:hover {
   }
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*-------------- Header -----------------*/
 .header {
   display: flex;
@@ -1976,6 +1982,13 @@ input[type="submit"].btn--border-white:hover {
   margin-bottom: 50px;
 }
 
+.info-block__img {
+  float: right;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  max-width: 50%;
+}
+
 .info-block__content {
   padding-left: 50px;
   padding-bottom: 25px;
@@ -1999,6 +2012,7 @@ input[type="submit"].btn--border-white:hover {
   font-size: 16px;
   line-height: 1.5;
   color: #222222;
+  padding-right: 15px;
 }
 
 .info-block__detail {
@@ -2081,6 +2095,12 @@ input[type="submit"].btn--border-white:hover {
   }
   .info-block__title, .info-block__subtitle {
     font-size: 35px;
+  }
+  .info-block__img {
+    float: none;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 60px;
   }
 }
 

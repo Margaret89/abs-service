@@ -285,3 +285,9 @@ input[type="submit"].btn--border-white:hover{
 		padding: 30px;
 	}
 }
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
